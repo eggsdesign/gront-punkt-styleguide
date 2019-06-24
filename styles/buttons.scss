@@ -111,8 +111,8 @@ button span {
   fill: black;
 }
 
-.gp-button-secondary:hover span > svg {
-  fill: $green-dark;
+.gp-button-secondary:active span > svg {
+  fill: white;
 }
 
 /*
@@ -138,11 +138,11 @@ button span {
 }
 
 .gp-button-tertiary span > svg {
-  fill: black;
+  fill: $green-medium;
 }
 
-.gp-button-tertiary:hover span > svg {
-  fill: $green-medium;
+.gp-button-tertiary:active span > svg {
+  fill: $green-dark;
 }
 
 /*
