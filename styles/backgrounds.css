@@ -1,5 +1,15 @@
+@charset "UTF-8";
+/* Base units */
+/*Grønt Punkt colors*/
+/* Usage:
+@include box-shadow();
+*/
 .background-white {
   background-color: #fff;
+}
+
+.background-green-mint-10percent {
+  background-color: #e7fcf9;
 }
 
 /*# sourceMappingURL=backgrounds.css.map */

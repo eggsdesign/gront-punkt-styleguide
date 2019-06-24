@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["backgrounds.scss"],"names":[],"mappings":"AAAA;EACE","file":"backgrounds.css"}
+{"version":3,"sourceRoot":"","sources":["variables.scss","backgrounds.scss"],"names":[],"mappings":";AAAA;AAIA;AAwCA;AAAA;AAAA;AC1CA;EACE;;;AAGF;EACE,kBDCqB","file":"backgrounds.css"}

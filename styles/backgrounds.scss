@@ -1,3 +1,9 @@
+@import "variables.scss";
+
 .background-white {
   background-color: #fff;
+}
+
+.background-green-mint-10percent {
+  background-color: $green-mint-10percent;
 }

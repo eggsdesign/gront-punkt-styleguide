@@ -17,4 +17,12 @@ x2 = 2 base units
   padding: 1rem;
 }
 
+.margin-bottom-x1 {
+  margin-bottom: 0.5rem;
+}
+
+.margin-bottom-x2 {
+  margin-bottom: 1rem;
+}
+
 /*# sourceMappingURL=paddings-margins.css.map */
