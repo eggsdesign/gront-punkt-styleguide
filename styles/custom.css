@@ -1,0 +1,232 @@
+@charset "UTF-8";
+/* Base units */
+/*Grønt Punkt colors*/
+/* Usage:
+@include box-shadow();
+*/
+body,
+html {
+  background-color: #fff;
+  background-image: linear-gradient(rgba(191, 244, 255, 0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(191, 244, 255, 0.4) 1px, transparent 1px), linear-gradient(rgba(191, 244, 255, 0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(191, 244, 255, 0.4) 1px, transparent 1px);
+  background-size: 64px 64px, 64px 64px, 8px 8px, 8px 8px;
+  background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
+}
+
+#contents {
+  padding: 4em;
+  max-width: 64rem;
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Avenir-medium";
+}
+
+p,
+label,
+input,
+ul,
+ol,
+li,
+th,
+td {
+  font-family: "Avenir-medium";
+}
+
+.system,
+.system a {
+  font-family: "FiraCode-Light";
+  text-transform: uppercase;
+  color: #006a7f;
+  line-height: 1rem;
+  font-size: 1rem;
+}
+
+.system a {
+  text-decoration: none;
+}
+
+span.highlight-yellow {
+  font-family: "FiraCode-Light";
+  color: #17e4c4;
+  line-height: 1rem;
+  font-size: 1rem;
+}
+
+span.highlight-pink {
+  font-family: "FiraCode-Light";
+  color: #006a7f;
+  line-height: 1rem;
+  font-size: 1rem;
+}
+
+span.highlight-orange {
+  font-family: "FiraCode-Light";
+  color: #17e4c4;
+  line-height: 1rem;
+  font-size: 1rem;
+}
+
+span.highlight-blue {
+  font-family: "FiraCode-Light";
+  color: #00d5ff;
+  line-height: 1rem;
+  font-size: 1rem;
+}
+
+span.highlight-green {
+  font-family: "FiraCode-Light";
+  color: #00b195;
+  line-height: 1rem;
+  font-size: 1rem;
+}
+
+span.highlight-green-light {
+  font-family: "FiraCode-Light";
+  color: #00b195;
+  line-height: 1rem;
+  font-size: 1rem;
+}
+
+hr {
+  background-color: #4bbed2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  background-color: rgba(0, 213, 255, 0.2);
+}
+
+br {
+  line-height: 16px;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+fieldset {
+  margin-bottom: 4rem;
+}
+
+figure {
+  padding: 4rem;
+  border: solid 0.5rem #000;
+}
+
+header {
+  background-color: rgba(23, 228, 196, 0.25);
+  padding: 3rem 3rem 2rem 3rem;
+}
+
+header h1 {
+  margin-bottom: 1rem;
+}
+header h2 {
+  margin-bottom: 1rem;
+}
+header h3 {
+  margin-bottom: 1rem;
+}
+header h4 {
+  margin-bottom: 1rem;
+}
+
+table {
+  margin-bottom: 1rem;
+}
+
+.block-wrap {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+
+.sample {
+  width: 100%;
+  align-self: center;
+  padding-top: 1rem;
+}
+
+.moustache {
+  border: solid 1px #00b195;
+  border-left: 0;
+  min-width: 1em;
+  margin-left: 1rem;
+}
+
+.dash {
+  background-color: #00b195;
+  align-self: center;
+  min-width: 1em;
+  height: 1px;
+}
+
+.description {
+  align-self: center;
+}
+.description p {
+  margin: 1rem;
+  background: transparent;
+}
+
+.overlay {
+  border-top: solid 1px hotpink;
+  border-bottom: solid 1px hotpink;
+  width: 100%;
+  position: fixed;
+  height: 1rem;
+  top: 50vh;
+  display: none;
+}
+
+/*Forced button states*/
+.primary-hover {
+  background-color: #00b195;
+  border-color: #00b195;
+  color: white;
+}
+
+.primary-active {
+  background-color: #006352;
+  border-color: #006352;
+  color: white;
+}
+
+.secondary-hover {
+  background-color: #e7fcf9;
+  border-color: #006352;
+  color: #004f47;
+}
+
+.secondary-active {
+  background-color: #006352;
+  border-color: #006352;
+  color: white;
+}
+
+.tertiary-hover {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #00b195;
+  color: #00b195;
+}
+
+.tertiary-active {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #006352;
+  color: #006352;
+}
+
+/*# sourceMappingURL=custom.css.map */

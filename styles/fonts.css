@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "Roboto-regular";
+  src: url("../fonts/Roboto-regular/Roboto-regular.ttf");
+  src: url("../fonts/Roboto-regular/Roboto-regular.ttf?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Roboto-regular/Roboto-regular.woff2") format("woff2"),
+    url("../fonts/Roboto-regular/Roboto-regular.woff") format("woff"),
+    url("../fonts/Roboto-regular/Roboto-regular.ttf") format("truetype"),
+    url("../fonts/Roboto-regular/Roboto-regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Roboto-300";
+  src: url("../fonts/Roboto-300/Roboto-300.ttf");
+  src: url("../fonts/Roboto-300/Roboto-300.ttf?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Roboto-300/Roboto-300.woff2") format("woff2"),
+    url("../fonts/Roboto-300/Roboto-300.woff") format("woff"),
+    url("../fonts/Roboto-300/Roboto-300.ttf") format("truetype"),
+    url("../fonts/Roboto-300/Roboto-300.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Roboto-500";
+  src: url("../fonts/Roboto-500/Roboto-500.ttf");
+  src: url("../fonts/Roboto-500/Roboto-500.ttf?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Roboto-500/Roboto-500.woff2") format("woff2"),
+    url("../fonts/Roboto-500/Roboto-500.woff") format("woff"),
+    url("../fonts/Roboto-500/Roboto-500.ttf") format("truetype"),
+    url("../fonts/Roboto-500/Roboto-500.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Roboto-700";
+  src: url("../fonts/Roboto-700/Roboto-700.ttf");
+  src: url("../fonts/Roboto-700/Roboto-700.ttf?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Roboto-700/Roboto-700.woff2") format("woff2"),
+    url("../fonts/Roboto-700/Roboto-700.woff") format("woff"),
+    url("../fonts/Roboto-700/Roboto-700.ttf") format("truetype"),
+    url("../fonts/Roboto-700/Roboto-700.ttf") format("ttf");
+}
+
+/* Fira Code */
+
+@font-face {
+  font-family: "FiraCode-Light";
+  font-style: light;
+  src: url("../fonts/FiraCode/ttf/FiraCode-Light.ttf");
+  src: url("../fonts/FiraCode/ttf/FiraCode-Light.ttf?#iefix")
+      format("embedded-opentype"),
+    local("FiraCode-Light"),
+    url("../fonts/FiraCode/woff2/FiraCode-Light.woff2") format("woff2"),
+    url("../fonts/FiraCode/woff/FiraCode-Light.woff") format("woff"),
+    url("../fonts/FiraCode/ttf/FiraCode-Light.ttf") format("truetype"),
+    url("../fonts/FiraCode/ttf/FiraCode-Light.ttf") format("ttf");
+}
+
+/* Avenir */
+
+@font-face {
+  font-family: "Avenir-medium";
+  src: url("../fonts/Avenir/Avenir-Medium.ttf");
+  src: url("../fonts/Avenir/Avenir-Medium.ttf?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Avenir/Avenir-Medium.ttf") format("truetype"),
+    url("../fonts/Avenir/Avenir-Medium.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Avenir-light";
+  src: url("../fonts/Avenir/Avenir-Light.ttf");
+  src: url("../fonts/Avenir/Avenir-Light.ttf?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Avenir/Avenir-Light.ttf") format("truetype"),
+    url("../fonts/Avenir/Avenir-Light.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Avenir-bold";
+  src: url("../fonts/Avenir/Avenir-Bold.ttf");
+  src: url("../fonts/Avenir/Avenir-Bold.ttf?#iefix") format("embedded-opentype"),
+    url("../fonts/Avenir/Avenir-Bold.ttf") format("truetype"),
+    url("../fonts/Avenir/Avenir-Bold.ttf") format("ttf");
+}

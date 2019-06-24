@@ -1,0 +1,251 @@
+@import "variables.scss";
+
+$gridOpacity: 0.5;
+$gridLine-light: rgba(191, 244, 255, 0.4);
+$gridLine-dark: rgba(191, 244, 255, $gridOpacity);
+
+@mixin makeOpaque($r, $g, $b, $opacity) {
+  background-color: rgba($r, $g, $b, $opacity);
+}
+
+body,
+html {
+  background-color: #fff;
+  background-image:
+    /*Large horizontal*/ linear-gradient(
+      $gridLine-light 1px,
+      transparent 1px
+    ),
+    /*Large vertical*/
+      linear-gradient(90deg, $gridLine-light 1px, transparent 1px),
+    /*Small horizontal*/ linear-gradient($gridLine-light 1px, transparent 1px),
+    /*Small vertical*/
+      linear-gradient(90deg, $gridLine-light 1px, transparent 1px);
+
+  background-size: 64px 64px, 64px 64px, 8px 8px, 8px 8px;
+  background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
+}
+
+#contents {
+  padding: 4em;
+  max-width: 64rem;
+  margin: auto;
+}
+
+* {
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Avenir-medium";
+}
+
+p,
+label,
+input,
+ul,
+ol,
+li,
+th,
+td {
+  font-family: "Avenir-medium";
+}
+
+.system,
+.system a {
+  font-family: "FiraCode-Light";
+  text-transform: uppercase;
+  color: $blue-sky-shade-50;
+  line-height: 1rem;
+  font-size: 1rem;
+}
+
+.system a {
+  text-decoration: none;
+}
+
+span.highlight-yellow {
+  font-family: "FiraCode-Light";
+  color: $green-mint;
+  line-height: 1rem;
+  font-size: 1rem;
+}
+
+span.highlight-pink {
+  font-family: "FiraCode-Light";
+  color: $blue-sky-shade-50;
+  line-height: 1rem;
+  font-size: 1rem;
+}
+
+span.highlight-orange {
+  font-family: "FiraCode-Light";
+  color: $green-mint;
+  line-height: 1rem;
+  font-size: 1rem;
+}
+
+span.highlight-blue {
+  font-family: "FiraCode-Light";
+  color: $blue-sky;
+  line-height: 1rem;
+  font-size: 1rem;
+}
+
+span.highlight-green {
+  font-family: "FiraCode-Light";
+  color: $green-medium;
+  line-height: 1rem;
+  font-size: 1rem;
+}
+
+span.highlight-green-light {
+  font-family: "FiraCode-Light";
+  color: $green-medium;
+  line-height: 1rem;
+  font-size: 1rem;
+}
+
+hr {
+  background-color: #4bbed2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  @include makeOpaque(0, 213, 255, 0.2);
+}
+
+br {
+  line-height: 16px;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+img,
+svg {
+  //display: block;
+}
+
+fieldset {
+  margin-bottom: 4rem;
+}
+
+figure {
+  padding: 4rem;
+  border: solid 0.5rem #000;
+}
+
+// headers
+
+header {
+  background-color: rgba(23, 228, 196, 0.25);
+  padding: 3rem 3rem 2rem 3rem;
+}
+
+header {
+  h1 {
+    margin-bottom: 1rem;
+  }
+  h2 {
+    margin-bottom: 1rem;
+  }
+  h3 {
+    margin-bottom: 1rem;
+  }
+  h4 {
+    margin-bottom: 1rem;
+  }
+}
+
+// Styleguide styling:
+
+table {
+  margin-bottom: 1rem;
+}
+
+// Moustaches
+
+.block-wrap {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+
+.sample {
+  width: 100%;
+  align-self: center;
+  padding-top: 1rem;
+}
+
+.moustache {
+  border: solid 1px $green-medium;
+  border-left: 0;
+  min-width: 1em;
+  margin-left: 1rem;
+}
+
+.dash {
+  background-color: $green-medium;
+  align-self: center;
+  min-width: 1em;
+  height: 1px;
+}
+
+.description {
+  align-self: center;
+
+  p {
+    margin: 1rem;
+    background: transparent;
+  }
+}
+
+.overlay {
+  border-top: solid 1px hotpink;
+  border-bottom: solid 1px hotpink;
+  width: 100%;
+  position: fixed;
+  height: 1rem;
+  top: 50vh;
+
+  display: none;
+}
+
+/*Forced button states*/
+
+.primary-hover {
+  @include buttonColors($green-medium, $green-medium, white);
+}
+
+.primary-active {
+  @include buttonColors($green-dark, $green-dark, white);
+}
+
+.secondary-hover {
+  @include buttonColors($green-mint-10percent, $green-dark, $green-extra-dark);
+}
+
+.secondary-active {
+  @include buttonColors($green-dark, $green-dark, white);
+}
+
+.tertiary-hover {
+  @include buttonColors($transparent, $green-medium, $green-medium);
+}
+
+.tertiary-active {
+  @include buttonColors($transparent, $green-dark, $green-dark);
+}

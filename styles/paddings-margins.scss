@@ -1,0 +1,15 @@
+@import "variables.scss";
+
+/*
+x1 = 1 base units
+x2 = 2 base units
+...
+*/
+
+.padding-x1 {
+  padding: $base-unit;
+}
+
+.padding-x2 {
+  padding: 2 * $base-unit;
+}

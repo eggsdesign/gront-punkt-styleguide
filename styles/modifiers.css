@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/* Base units */
+/*Grønt Punkt colors*/
+/* Usage:
+@include box-shadow();
+*/
+.rounded {
+  border-radius: 0.5rem;
+}
+
+/*# sourceMappingURL=modifiers.css.map */

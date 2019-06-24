@@ -1,0 +1,5 @@
+@import "variables.scss";
+
+.rounded {
+  @include border-radius(0.5rem);
+}
