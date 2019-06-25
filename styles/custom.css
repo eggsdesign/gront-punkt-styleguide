@@ -12,29 +12,8 @@ html {
   background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
 }
 
-#contents {
-  padding: 4em;
-  max-width: 64rem;
-  margin: auto;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Avenir-medium";
-}
-
-p,
-label,
-input,
-ul,
-ol,
-li,
-th,
-td {
-  font-family: "Avenir-medium";
+p {
+  border-bottom: 1.5rem solid #e7fcf9;
 }
 
 .system,
