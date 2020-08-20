@@ -1,0 +1,460 @@
+<!--#include virtual="includes/htmlstart.shtml" -->
+<!--#include virtual="includes/headstart.shtml" -->
+<!--#include virtual="includes/meta.shtml" -->
+<!--#include virtual="includes/title.shtml" -->
+<link rel="stylesheet" href="styles/css/normalise.css">
+<link rel="stylesheet" href="styles/css/variables.css">
+<link rel="stylesheet" href="styles/css/fonts.css">
+<link rel="stylesheet" href="styles/css/size-16.css">
+<link rel="stylesheet" href="styles/css/forms.css">
+<link rel="stylesheet" href="styles/css/buttons.css">
+<link rel="stylesheet" href="styles/css/lists.css">
+<link rel="stylesheet" href="styles/css/images.css">
+
+<link rel="stylesheet" href="styles/css/backgrounds.css">
+<link rel="stylesheet" href="styles/css/shadows.css">
+<link rel="stylesheet" href="styles/css/paddings-margins.css">
+<link rel="stylesheet" href="styles/css/modifiers.css">
+<link rel="stylesheet" href="styles/css/component_header.css">
+<link rel="stylesheet" href="styles/css/tables.css">
+<link rel="stylesheet" href="styles/css/cards.css">
+
+
+
+
+
+<link rel="stylesheet" href="styles/css/custom.css">
+
+<style>
+
+#contents h5 {
+  font-family: sans-serif;
+  font-size: 1em;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+  text-transform: none;
+}
+
+#contents h4 {
+  font-family: sans-serif;
+  font-size: 1em;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+#contents h3 {
+  font-family: sans-serif;
+  font-size: 1.25em;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-transform: none;
+}
+
+#contents h2 {
+  font-family: sans-serif;
+  font-size: 1.5em;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+  text-transform: none;
+}
+
+#contents h1 {
+  font-family: sans-serif;
+  font-size: 2em;
+  line-height: 2.5rem;
+  margin-bottom: 2.5rem;
+  text-transform: none;
+}
+
+
+
+html, a {
+  scroll-behavior: smooth;
+}
+
+
+html, body {
+  background-color: #fff;
+
+  background-image: linear-gradient(#F6F6F6 1px, transparent 1px),
+    linear-gradient(90deg, #F6F6F6 1px, transparent 1px),
+    linear-gradient(#F6F6F6 1px, transparent 1px),
+    linear-gradient(90deg, #F6F6F6 1px, transparent 1px);
+
+  background-size: 64px 64px, 64px 64px, 8px 8px, 8px 8px;
+  background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
+}
+
+details {
+  padding: 1rem;
+}
+.stickyMenu {
+  position: static;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+}
+
+.stickyMenu > li > a {
+  color: #89FFEE;
+  text-decoration: none;
+}
+
+.stickyMenu > li > a:hover {
+  color: #FA1EFF;
+  text-decoration: underline;
+}
+
+td h3 , h3#Variants{
+  padding-top: 7.9375rem;
+  background-image: linear-gradient(
+    135deg,
+    #cccccc 10%,
+    #ffffff 10%,
+    #ffffff 50%,
+    #cccccc 50%,
+    #cccccc 60%,
+    #ffffff 60%,
+    #ffffff 100%
+  );
+  background-size: 5px 5px;
+  border-bottom: 1px solid hotpink;
+}
+
+p {
+  font-family: sans-serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.normal {
+  font-style: normal;
+}
+
+.preloader {
+  margin-left: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+.preloader span{
+    width: 0px;
+    height: 0px;
+    animation: preloader_2 2s  infinite ease-in-out;
+    border-radius: 4px;
+    margin-left: 4px;
+    background-color: #48EBC4;
+}
+
+button:hover .preloader span {
+  background-color: #003F4C;
+}
+
+.preloader span:nth-child(2){
+animation-delay: .2s;
+}
+.preloader span:nth-child(3){
+
+animation-delay: .4s;
+}
+.preloader span:nth-child(4){
+
+animation-delay: .6s;
+}
+.preloader span:nth-child(5){
+
+animation-delay: .8s;
+}
+@keyframes preloader_1 {
+    0% {height:0;width:0;}
+    25% {height:8px;width:8px;}
+    50% {height:0px;width: 0;}
+    100% {height:0px;width: 0px;}
+}
+
+
+@keyframes preloader_2 {
+    0% {height:0;width:0;}
+    25% {height:8px;width:8px;}
+    50% {height:0px;width: 0;}
+    100% {height:0px;width: 0px;}
+}
+
+@keyframes preloader_3 {
+    0% {transform: rotate(90deg)}
+    25% {transform: rotate(180deg)}
+    50% {transform: rotate(270deg)}
+    100% {transform: rotate(360deg)}
+}
+
+button {
+  animation: preloader_4 2s  infinite ease-in-out;
+}
+
+@keyframes preloader_4 {
+    0% {background-color: #003F4C}
+    50% {background-color: #000}
+    100% {background-color: #003F4C}
+}
+</style>
+
+
+<!--#include virtual="includes/headstop.shtml" -->
+<!--#include virtual="includes/bodystart.shtml" -->
+<!--#include virtual="includes/browsehappy.shtml" -->
+
+
+<header>
+  <div id="bar-branding">3665 Design System</div>
+  <div id="bar-title">Buttons</div>
+  <!--
+  <div id="bar-contents"><ul>
+    <li>Buttons colors</li>
+    <li>Generating bttons</li>
+    <li>variants</li>
+  </ul></div>
+-->
+</header>
+
+
+<section id="contents">
+
+
+<h3 id="Variants">Variants</h3>
+<p>Variants
+</p>
+<button class="size_default priority_primary icon_none state_inactive btn">
+  thinking
+<div class="preloader" >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+</div>
+</button>
+<p>
+
+</p>
+
+
+</section>
+
+
+<script>
+var contents = document.querySelector('#contents');
+
+var tabletypes = {
+  table_default      : "table-default",
+  table_zebra        : "table-zebra",
+  table_list         : "table-list"
+}
+
+var dssizes = {
+  size_xsmall        : "x-small",
+  size_small         : "small",
+  size_default       : "default",
+  size_large         : "large",
+  size_xlarge        : "x-large"
+};
+
+
+
+var headers = [];
+var divvers = [];
+
+var textStyles = {
+  normal      : "normal",
+  italic      : "italic",
+  bold        : "bold",
+  underline   : "underline"
+};
+
+var weights = {
+  light     : "200",
+  medium    : "400",
+  heavy     : "600"
+}
+
+var colors = {
+  black : "#000",
+  grey : "#ccc",
+  blue : "#0000ff"
+};
+
+var lineheights = {
+  tight : "1rem",
+  normal : "1rem",
+  loose : "2rem"
+};
+
+/* Adds Element AFTER NeighborElement */
+Element.prototype.appendAfter = function(element) {
+  element.parentNode.insertBefore(this, element.nextSibling);
+}, false;
+
+//Create all the header elements and add them to an array
+
+var d;
+
+function bodyTextVarients (){
+  var dd = document.createElement('div');
+  dd.classList.add('font-test');
+  contents.appendChild(dd);
+
+  for(var col in colors){
+    if(colors.hasOwnProperty(col)){
+
+      for(var ts in textStyles){
+        if(textStyles.hasOwnProperty(ts)){
+
+          for(var lhs in lineheights){
+            if(lineheights.hasOwnProperty(lhs)){
+
+              for(var wts in weights){
+                if(weights.hasOwnProperty(wts)){
+
+                  var p = document.createElement('p');
+                  var para = document.createTextNode("Quem facilisi moderatius id eam, id tamquam albucius per. Vel quem congue appareat cu, mei te eros convenire. Sea bonorum epicuri ea, ei exerci tacimates pro, aliquam pertinacia eu vim. Vix ei stet ornatus. Est mediocrem reprimique contentiones ei, mea ne primis intellegat. Dico purto nullam sea an.");
+                  p.appendChild(para);
+                  //p.style.lineHeight = lhs;
+                  p.style.fontWeight = "'" + wts + "'";
+                  //p.style.fontStyle = ts;
+                }
+              }
+
+            }
+          }
+
+        }
+      }
+
+    }
+  }
+}
+
+bodyTextVarients();
+
+function headerAndParagraph (){
+
+for (var i = 1; i < 6; i++){
+
+  var h = document.createElement('h' + i);
+  headers.push(h);
+
+  d = document.createElement('div');
+  contents.appendChild(d);
+
+  var t = document.createTextNode("How razorback-jumping frogs can level six piqued gymnasts!");
+  var p = document.createElement('p');
+  var para = document.createTextNode("Quem facilisi moderatius id eam, id tamquam albucius per. Vel quem congue appareat cu, mei te eros convenire. Sea bonorum epicuri ea, ei exerci tacimates pro, aliquam pertinacia eu vim. Vix ei stet ornatus. Est mediocrem reprimique contentiones ei, mea ne primis intellegat. Dico purto nullam sea an.");
+
+  h.appendChild(t);
+
+  d.appendChild(h);
+
+  p.appendChild(para);
+
+  d.appendChild(p);
+
+  }
+}
+
+headerAndParagraph();
+
+function paraStyles (){
+    for (var tstyle in textStyles){}
+
+}
+
+
+
+
+
+/*
+1. for each variant in the tableVariants array
+2. generate a tables
+3. append to document
+*/
+
+function makeTableVariant (){
+
+  for (sz in dssizes){
+    if(dssizes.hasOwnProperty(sz)){
+
+      for (var ttype in tabletypes) {
+        if (tabletypes.hasOwnProperty(ttype)) {
+            let t = document.createElement('table');
+            let r1 = t.insertRow();
+            let r2 = t.insertRow();
+            let r3 = t.insertRow();
+
+            let c1 = r1.insertCell();
+            let c2 = r1.insertCell();
+
+            let c3 = r2.insertCell();
+            let c4 = r2.insertCell();
+
+            let c5 = r3.insertCell();
+            let c6 = r3.insertCell();
+
+            c1.innerHTML = "I am a" + ' ' + ttype + ' ' + "table";
+            c2.innerHTML = "I am a" + ' ' + ttype + ' ' + "table";
+            c3.innerHTML = "I am a" + ' ' + ttype + ' ' + "table";
+            c4.innerHTML = "I am a" + ' ' + ttype + ' ' + "table";
+            c5.innerHTML = "I am a" + ' ' + ttype + ' ' + "table";
+            c6.innerHTML = "I am a" + ' ' + ttype + ' ' + "table";
+
+            t.classList.add(ttype);
+
+            contents.appendChild(t);
+            t.classList.add(sz);
+            console.log(t);
+          }
+        }
+
+  }
+}
+}
+
+makeTableVariant ();
+
+
+
+  // Make a menu
+
+  var menu = document.createElement('ul');
+  menu.classList.add('stickyMenu');
+  contents.prepend(menu);
+
+  var headers_h3 = document.getElementsByTagName('h3');
+
+  for (var i = 0; i < headers_h3.length; i++) {
+    var headerTitle = headers_h3[i].textContent;
+    var listitem = document.createElement('li');
+    listitem.innerHTML = "<a href=" + "#" + headerTitle + ">" + headerTitle; + "</a>";
+    listitem.classList.add('listitem');
+
+    menu.appendChild(listitem);
+  }
+
+
+
+</script>
+</html>

@@ -1,0 +1,69 @@
+<!--#include virtual="includes/htmlstart.shtml" -->
+<!--#include virtual="includes/headstart.shtml" -->
+<!--#include virtual="includes/meta.shtml" -->
+<!--#include virtual="includes/title.shtml" -->
+<link rel="stylesheet" href="styles/css/normalise.css">
+<link rel="stylesheet" href="styles/css/variables.css">
+<link rel="stylesheet" href="styles/css/fonts.css">
+<link rel="stylesheet" href="styles/css/size-16.css">
+<link rel="stylesheet" href="styles/css/forms.css">
+<link rel="stylesheet" href="styles/css/buttons.css">
+<link rel="stylesheet" href="styles/css/lists.css">
+<link rel="stylesheet" href="styles/css/images.css">
+<link rel="stylesheet" href="styles/css/tables.css">
+<link rel="stylesheet" href="styles/css/backgrounds.css">
+<link rel="stylesheet" href="styles/css/shadows.css">
+<link rel="stylesheet" href="styles/css/paddings-margins.css">
+<link rel="stylesheet" href="styles/css/modifiers.css">
+
+
+<link rel="stylesheet" href="styles/css/custom.css">
+
+
+<!--#include virtual="includes/headstop.shtml" -->
+<!--#include virtual="includes/bodystart.shtml" -->
+
+<!--#include virtual="includes/browsehappy.shtml" -->
+
+<div id="buttons">
+
+
+
+
+  
+</div>
+
+<script type="text/javascript">
+
+
+
+var size = ["large", "medium", "small"];
+var priority = ["primary", "secondary", "tertiary"];
+var state = ["active", "inactive", "hover", "selected", "disabled"];
+var icon = ["iconleft","iconright", "iconnone", "icononly"];
+/*
+var buttonMaker = function(size, priority, state, icon){
+
+  button.classList.add(size);
+  button.classList.add(priority);
+  button.classList.add(state);
+  button.classList.add(icon);
+  document.appendChild(button);
+}
+
+buttonMaker();
+
+*/
+var buttonsdiv = document.getElementById('buttons');
+var button = document.createElement('button');
+
+button.textContent = "I am a button";
+buttonsdiv.appendChild(button);
+
+console.log(button);
+</script>
+
+
+
+<!--#include virtual="includes/bodystop.shtml" -->
+<!--#include virtual="includes/htmlstop.shtml" -->

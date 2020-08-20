@@ -1,0 +1,183 @@
+<!--#include virtual="includes/htmlstart.shtml" -->
+<!--#include virtual="includes/headstart.shtml" -->
+<!--#include virtual="includes/meta.shtml" -->
+<!--#include virtual="includes/title.shtml" -->
+<link rel="stylesheet" href="styles/css/normalise.css">
+<link rel="stylesheet" href="styles/css/variables.css">
+<link rel="stylesheet" href="styles/css/fonts.css">
+<link rel="stylesheet" href="styles/css/size-16.css">
+<link rel="stylesheet" href="styles/css/forms.css">
+<link rel="stylesheet" href="styles/css/buttons.css">
+<link rel="stylesheet" href="styles/css/lists.css">
+<link rel="stylesheet" href="styles/css/images.css">
+<link rel="stylesheet" href="styles/css/tables.css">
+<link rel="stylesheet" href="styles/css/backgrounds.css">
+<link rel="stylesheet" href="styles/css/shadows.css">
+<link rel="stylesheet" href="styles/css/paddings-margins.css">
+<link rel="stylesheet" href="styles/css/modifiers.css">
+
+
+<link rel="stylesheet" href="styles/css/custom.css">
+
+<style>
+button {
+  margin-bottom: 1rem;
+}
+</style>
+<!--#include virtual="includes/headstop.shtml" -->
+<!--#include virtual="includes/bodystart.shtml" -->
+<!--#include virtual="includes/browsehappy.shtml" -->
+
+
+<section id="contents">
+
+    <h1>Forms</h1>
+    <p>The labels for the button rows below have their line-height set to the height of the highest element. So, the large buttons are 48px high, which means the labels have a line height of 3rem.</p>
+    <form action="" class="gp-form">
+      <fieldset>
+
+
+
+        <!--  Row -->
+        <div class="gp-form-row">
+          <!-- Row col 1-->
+          <div class="gp-form-col">
+          </div>
+
+          <!-- Row col 2-->
+          <div class="gp-form-col">
+          </div>
+        </div>
+
+
+        <!--  END Row -->
+
+        <p>The inputs have their border removed from their line-height - there's no padding involved</p>
+
+        <!--  Row -->
+        <div class="gp-form-row">
+          <!-- Row col 1-->
+          <div class="gp-form-col">
+            <div><label for="Telefonnummer">White buttons →</label></div>
+          </div>
+
+          <!-- Row col 2-->
+          <div class="gp-form-col">
+            <div>
+              <input type="text" class="gp-input-small">
+            </div>
+          </div>
+        </div>
+        <!--  END Row -->
+
+        <!--  Row -->
+        <div class="gp-form-row">
+          <!-- Row col 1-->
+          <div class="gp-form-col">
+            <div><label for="Telefonnummer">White buttons →</label></div>
+          </div>
+
+          <!-- Row col 2-->
+          <div class="gp-form-col">
+            <div>
+              <input type="text" class="gp-input-default">
+            </div>
+          </div>
+        </div>
+        <!--  END Row -->
+
+        <!--  Row -->
+        <div class="gp-form-row gp-form-row-lh-3rem">
+          <!-- Row col 1-->
+          <div class="gp-form-col">
+            <div><label for="Telefonnummer">White buttons →</label></div>
+          </div>
+
+          <!-- Row col 2-->
+          <div class="gp-form-col">
+            <div>
+              <input type="text" class="gp-input-big">
+            </div>
+          </div>
+        </div>
+        <!--  END Row -->
+
+
+
+        <!--  Row -->
+        <div class="gp-form-row">
+          <!-- Row col 1-->
+          <div class="gp-form-col gp-form-row-lh-2rem">
+            <div><label for="Telefonnummer">White buttons →</label></div>
+          </div>
+
+          <!-- Row col 2-->
+          <div class="gp-form-col">
+            <div>
+
+              <button class="size_default state_inactive icon_left priority_primary btn">
+              I am a button</button>
+
+              <button class="size_small state_inactive icon_right priority_primary btn">
+              I am a button yalll</button>
+
+              <button class="size_large state_inactive icon_left priority_primary btn">
+              I am a button yall</button>
+
+            </div>
+          </div>
+        </div>
+        <!--  END Row -->
+
+
+      </fieldset>
+    </form>
+
+<h1>Shadowy boxes</h1>
+<div class="shadowbox background-white rounded padding-x2">
+  This is a rounded box
+</div>
+</section>
+
+<script>
+// Create an empty array
+  var buttonArray = [];
+
+// Grab all the buttons
+  var butt = document.getElementsByClassName('btn');
+
+// Push them into the buttonArray array
+  for(var i = 0; i < butt.length; i++){
+    buttonArray.push(butt[i]);
+  }
+
+// Make the insertable content
+
+var iconString = '<?xml version="1.0" encoding="UTF-8"?>\n<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\n<g id="GP-DS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\n<g id="Desktop-HD-Copy" transform="translate(-536.000000, -655.000000)" fill="#000000">\n <path d="M536,665 C536,670.52 540.47,675 545.99,675 C551.52,675 556,670.52 556,665 C556,659.48 551.52,655 545.99,655 C540.47,655 536,659.48 536,665 Z M538,665 C538,660.58 541.58,657 546,657 C550.42,657 554,660.58 554,665 C554,669.42 550.42,673 546,673 C541.58,673 538,669.42 538,665 Z M545,663 L545,670 L547,670 L547,663 L545,663 Z M545,660 L545,662 L547,662 L547,660 L545,660 Z" id="Shape"></path>\n</g>\n</g>\n</svg>';
+
+/*
+// For every item in the array that has the
+// matched class, add this chunk to its inner html
+*/
+
+  for (var i = 0; i < buttonArray.length; i++) {
+    if (buttonArray[i].classList.contains("icon_left")) {
+      //Assign variable to the button label
+      var buttonLabel = buttonArray[i].innerHTML;
+      // Strip out the current label
+      buttonArray[i].innerHTML = '';
+      // Add the icon
+      buttonArray[i].innerHTML += iconString;
+      // Pop back in the label
+      buttonArray[i].innerHTML += buttonLabel;
+    }
+
+    if (buttonArray[i].classList.contains("icon_right")) {
+      buttonArray[i].innerHTML += iconString;
+    }
+  }
+
+</script>
+
+<!--#include virtual="includes/bodystop.shtml" -->
+<!--#include virtual="includes/htmlstop.shtml" -->

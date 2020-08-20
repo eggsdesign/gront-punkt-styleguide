@@ -1,0 +1,123 @@
+<!--#include virtual="includes/htmlstart.shtml" -->
+<!--#include virtual="includes/headstart.shtml" -->
+<!--#include virtual="includes/meta.shtml" -->
+<!--#include virtual="includes/title.shtml" -->
+<link rel="stylesheet" href="styles/css/normalise.css">
+<link rel="stylesheet" href="styles/css/variables.css">
+<link rel="stylesheet" href="styles/css/fonts.css">
+<link rel="stylesheet" href="styles/css/size-16.css">
+<link rel="stylesheet" href="styles/css/forms.css">
+<link rel="stylesheet" href="styles/css/buttons.css">
+<link rel="stylesheet" href="styles/css/lists.css">
+<link rel="stylesheet" href="styles/css/images.css">
+
+<link rel="stylesheet" href="styles/css/backgrounds.css">
+<link rel="stylesheet" href="styles/css/shadows.css">
+<link rel="stylesheet" href="styles/css/paddings-margins.css">
+<link rel="stylesheet" href="styles/css/modifiers.css">
+<link rel="stylesheet" href="styles/css/component_header.css">
+<link rel="stylesheet" href="styles/css/tables.css">
+<link rel="stylesheet" href="styles/css/cards.css">
+
+
+<style>
+.main-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: hotpink;
+  height: 150vh;
+  position: absolute;
+}
+
+.ball-1 {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+
+  background-image: linear-gradient(#fff 1px, transparent 1px),
+    linear-gradient(90deg, #fff 1px, transparent 1px),
+    linear-gradient(#fff 1px, transparent 1px),
+    linear-gradient(90deg, #fff 1px, transparent 1px);
+
+  background-size: 64px 64px, 64px 64px, 8px 8px, 8px 8px;
+  background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
+}
+
+.ball-2 {
+  border: solid 17px black;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  position: relative;
+  left: -10rem;
+  background-image: linear-gradient(#fff 1px, transparent 1px),
+    linear-gradient(90deg, #fff 1px, transparent 1px),
+    linear-gradient(#fff 1px, transparent 1px),
+    linear-gradient(90deg, #fff 1px, transparent 1px);
+
+  background-size: 128px 128px, 128px 128px, 32px 32px, 32px 32px;
+  background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
+
+}
+</style>
+
+<link rel="stylesheet" href="styles/css/custom.css">
+
+<html>
+<section class="main-section">
+
+  <div>
+    <p>
+        <label>Price From:</label>
+        <input type="range" id="fromPrice" value="0" min="0" max="48" step="8" class="slider_r"/>
+        <label id="fPrice"></label>
+    </p>
+    <p>
+        <label>Price To:</label>
+        <input type="range" id="toPrice" value="450" min="0" max="500"
+            oninput="document.getElementById('tPrice').innerHTML = this.value" />
+        <label id="tPrice"></label>
+    </p>
+    <p><input type="submit" value="submit" onclick="ti()" /></p>
+</div>
+
+  <div class="ball-1"></div>
+  <div class="ball-2"></div>
+  <button class="btn">I am a button</button>
+
+
+</section>
+
+
+<script>
+
+window.addEventListener('scroll', function(e){
+
+  const target_1 = document.querySelector('.ball-1');
+  const target_2 = document.querySelector('.ball-2');
+
+  var scrolled = window.pageYOffset;
+  var rate = scrolled * 0.5;
+  var curve = rate/0.8;
+
+
+  target_1.style.transform = 'translate3D(' + curve + 'px,' + rate + 'px,' + rate + 'px'     +')';
+  target_2.style.transform = 'rotate(' + rate * -1 + 'deg' + ')';
+
+});
+
+window.addEventListener('input', function(e){
+  const slider_r = document.querySelector('.slider_r');
+  const btn = document.querySelector('.btn');
+  var r_val = slider_r.value;
+  btn.style.backgroundColor = 'rgba(' + r_val + ',' + r_val + ',0,1)';
+  btn.style.borderRadius = r_val + 'px';
+  btn.style.padding = r_val + 'px';
+  console.log(btn.style);
+});
+
+
+</script>
+</html>

@@ -1,0 +1,244 @@
+<!--#include virtual="includes/htmlstart.shtml" -->
+<!--#include virtual="includes/headstart.shtml" -->
+<!--#include virtual="includes/meta.shtml" -->
+<!--#include virtual="includes/title.shtml" -->
+<link rel="stylesheet" href="styles/css/normalise.css">
+<link rel="stylesheet" href="styles/css/variables.css">
+<link rel="stylesheet" href="styles/css/fonts.css">
+<link rel="stylesheet" href="styles/css/size-16.css">
+<link rel="stylesheet" href="styles/css/forms.css">
+<link rel="stylesheet" href="styles/css/buttons.css">
+<link rel="stylesheet" href="styles/css/lists.css">
+<link rel="stylesheet" href="styles/css/images.css">
+<link rel="stylesheet" href="styles/css/tables.css">
+<link rel="stylesheet" href="styles/css/backgrounds.css">
+<link rel="stylesheet" href="styles/css/shadows.css">
+<link rel="stylesheet" href="styles/css/paddings-margins.css">
+<link rel="stylesheet" href="styles/css/modifiers.css">
+
+
+<link rel="stylesheet" href="styles/css/custom.css">
+
+
+<!--#include virtual="includes/headstop.shtml" -->
+<!--#include virtual="includes/bodystart.shtml" -->
+<!--#include virtual="includes/browsehappy.shtml" -->
+
+
+
+<section id="contents">
+  <div id="primaryButts"></div>
+  <table id="buttons">
+
+  </table>
+</section>
+
+<script>
+
+var primaryButts = document.getElementById('primaryButts');
+
+
+var dssizes = {
+  /*size_xsmall        : "x-small",*/
+  /*size_small         : "small",*/
+  size_default       : "default",
+  /*size_large         : "large"*/
+  /*xsize_xlarge        : "x-large"*/
+};
+
+var buttonpriorities = {
+  /*priority_primary   : "primary",*/
+  /*priority_secondary : "secondary"*/
+  priority_tertiary  : "tertiary"
+};
+
+var buttonicons = {
+  icon_none          : "i-none",
+  icon_left          : "i-left",
+  icon_right         : "i-right",
+  icon_only          : "i-only"
+}
+
+var buttonstates = {
+  state_inactive     : "inactive",
+  state_active       : "active",
+  state_hover        : "hover",
+  state_focused      : "focused",
+  state_selected     : "selected",
+  state_disabled     : "disabled"
+};
+
+
+var elem = document.querySelector('#buttons');
+var count = 0;
+
+var allThePrimaryButts = [];
+
+var allTheButts =        [];
+var allTheStates =       [];
+var allTheSizes =        [];
+var allTheIcons =        [];
+var allThePriorities =   [];
+
+/*
+the ...Names are for stripping out the underscores
+*/
+var allTheStatesNames =     [];
+var allTheSizesNames =      [];
+var allTheIconsNames =      [];
+var allThePrioritiesNames = [];
+
+
+var newNode = document.createElement('div');
+
+
+/*Create all the buttons*/
+
+for (var size in dssizes) {
+	if (dssizes.hasOwnProperty(size)) {
+    for (var state in buttonstates) {
+    	if (buttonstates.hasOwnProperty(state)) {
+        for (var icon in buttonicons) {
+          if (buttonicons.hasOwnProperty(icon)) {
+            for (var priority in buttonpriorities) {
+        	    if (buttonpriorities.hasOwnProperty(priority)) {
+                if(icon == 'icon_only'){
+                  allTheButts.push(
+                    '<button class="'
+                    + size
+                    + ' '
+                    + state
+                    + ' '
+                    + icon
+                    + ' '
+                    + priority
+                    + ' btn">'
+                    + '<svg width=\"20\" height=\"20\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M0 10c0 5.52 4.47 10 9.99 10C15.52 20 20 15.52 20 10S15.52 0 9.99 0C4.47 0 0 4.48 0 10zm2 0c0-4.42 3.58-8 8-8s8 3.58 8 8-3.58 8-8 8-8-3.58-8-8zm7-2v7h2V8H9zm0-3v2h2V5H9z\" fill-rule=\"evenodd\"/>\n</svg>'
+                    + '</button>'
+                    );
+                  } else if (icon == 'icon_left'){
+
+                  allTheButts.push(
+                    '<button class="'
+                    + size
+                    + ' '
+                    + state
+                    + ' '
+                    + icon
+                    + ' '
+                    + priority
+                    + ' btn">'
+                    + '<svg width=\"20\" height=\"20\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M0 10c0 5.52 4.47 10 9.99 10C15.52 20 20 15.52 20 10S15.52 0 9.99 0C4.47 0 0 4.48 0 10zm2 0c0-4.42 3.58-8 8-8s8 3.58 8 8-3.58 8-8 8-8-3.58-8-8zm7-2v7h2V8H9zm0-3v2h2V5H9z\" fill-rule=\"evenodd\"/>\n</svg>'
+                    + 'Button'
+                    + '</button>'
+                    );
+                  } else if(icon == 'icon_right'){
+                    allTheButts.push(
+                      '<button class="'
+                      + size
+                      + ' '
+                      + state
+                      + ' '
+                      + icon
+                      + ' '
+                      + priority
+                      + ' btn">'
+                      + 'Button'
+                          + '<svg width=\"20\" height=\"20\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M0 10c0 5.52 4.47 10 9.99 10C15.52 20 20 15.52 20 10S15.52 0 9.99 0C4.47 0 0 4.48 0 10zm2 0c0-4.42 3.58-8 8-8s8 3.58 8 8-3.58 8-8 8-8-3.58-8-8zm7-2v7h2V8H9zm0-3v2h2V5H9z\" fill-rule=\"evenodd\"/>\n</svg>'
+                      + '</button>'
+                      );
+                  }
+
+                  else if(icon == 'icon_none'){
+                    allTheButts.push(
+                      '<button class="'
+                      + size
+                      + ' '
+                      + state
+                      + ' '
+                      + icon
+                      + ' '
+                      + priority
+                      + ' btn">'
+                      + 'Button'
+                      + '</button>'
+                      );
+                  }
+
+            allTheStates.push(
+              state
+            );
+
+            allTheSizes.push(
+              size
+            );
+
+            allTheIcons.push(
+              icon
+            );
+
+            allThePriorities.push(
+              priority
+            );
+        	}
+        }
+    	}
+    }
+	}
+}
+}
+}
+
+for(var i = 0; i < allTheStates.length; i++){
+  allTheStatesNames.push(allTheStates[i].replace('_', '</b> : '));
+}
+
+for(var i = 0; i < allTheSizes.length; i++){
+  allTheSizesNames.push(allTheSizes[i].replace('_', '</b> : '));
+}
+
+for(var i = 0; i < allTheIcons.length; i++){
+  allTheIconsNames.push(allTheIcons[i].replace('_', '</b> : '));
+}
+
+for(var i = 0; i < allThePriorities.length; i++){
+  allThePrioritiesNames.push(allThePriorities[i].replace('_', '</b> : '));
+}
+
+for(var i = 0; i < allTheButts.length; i++){
+
+
+    elem.innerHTML += '<tr><td>'+ '<b>' + allTheSizesNames[i] + ' <br /> ' + '<b>' + allThePrioritiesNames[i] + ' <br /> ' + '<b>' + allTheIconsNames[i] + ' <br />' + '<b>' + allTheStatesNames[i] + '</td><td>' + allTheButts[i] + '</td></tr>';
+
+
+
+
+
+}
+
+
+for(var i = 0; i < allThePrimaryButts.length; i++){
+  primaryButts.innerHTML += allThePrimaryButts[i];
+}
+
+
+var butthole = document.getElementsByTagName('button');
+for(var i = 0; i < butthole.length; i++){
+  if(butthole[i].classList.contains('state_disabled')){
+    butthole[i].classList.add('sorry');
+    butthole[i].disabled = true;
+  }
+}
+
+
+
+
+</script>
+
+
+
+
+
+
+<!--#include virtual="includes/bodystop.shtml" -->
+<!--#include virtual="includes/htmlstop.shtml" -->

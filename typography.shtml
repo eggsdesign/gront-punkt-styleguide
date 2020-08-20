@@ -1,0 +1,335 @@
+<!--#include virtual="includes/htmlstart.shtml" -->
+<!--#include virtual="includes/headstart.shtml" -->
+<!--#include virtual="includes/meta.shtml" -->
+<!--#include virtual="includes/title.shtml" -->
+<link rel="stylesheet" href="styles/css/normalise.css">
+<link rel="stylesheet" href="styles/css/variables.css">
+<link rel="stylesheet" href="styles/css/fonts.css">
+<link rel="stylesheet" href="styles/css/size-16.css">
+<link rel="stylesheet" href="styles/css/forms.css">
+<link rel="stylesheet" href="styles/css/buttons.css">
+<link rel="stylesheet" href="styles/css/lists.css">
+<link rel="stylesheet" href="styles/css/images.css">
+<link rel="stylesheet" href="styles/css/tables.css">
+<link rel="stylesheet" href="styles/css/backgrounds.css">
+<link rel="stylesheet" href="styles/css/shadows.css">
+<link rel="stylesheet" href="styles/css/paddings-margins.css">
+<link rel="stylesheet" href="styles/css/modifiers.css">
+
+
+<link rel="stylesheet" href="styles/css/custom.css">
+
+<style>
+  .sample {
+    max-width: 456px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  li {
+    background-color : rgba(0, 213, 255, 0.2);
+  }
+</style>
+
+<!--#include virtual="includes/headstop.shtml" -->
+<!--#include virtual="includes/bodystart.shtml" -->
+<!--#include virtual="includes/browsehappy.shtml" -->
+
+
+<section id="contents">
+
+
+  <!-- H1 -->
+    <div class="block-wrap">
+      <div class="sample">
+        <h1>H6 How razorback-jumping frogs can level six piqued gymnasts!</h1>
+      </div>
+      <div class="moustache"></div>
+      <div class="dash"></div>
+      <div class="description">
+        <p class="system">
+          H1
+        </p>
+        <p>
+          <span class="system highlight-green">p =
+          <br>font-size : 3<span class="highlight-pink">em</span>;
+          <br>line-height : 3.5<span class="highlight-yellow">rem</span>;
+          <br>margin-bottom : 3.5<span class="highlight-yellow">rem</span>;
+          </span>
+        </p>
+      </div>
+    </div>
+
+  <!-- H2 -->
+    <div class="block-wrap">
+      <div class="sample">
+        <h2>H6 How razorback-jumping frogs can level six piqued gymnasts!</h2>
+      </div>
+      <div class="moustache"></div>
+      <div class="dash"></div>
+      <div class="description">
+        <p class="system">
+          H2
+        </p>
+        <p>
+          <span class="system highlight-green">p =
+          <br>font-size : 2.5<span class="highlight-pink">em</span>;
+          <br>line-height : 3<span class="highlight-yellow">rem</span>;
+          <br>margin-bottom : 3<span class="highlight-yellow">rem</span>;
+          </span>
+        </p>
+      </div>
+    </div>
+
+
+  <!-- H3 -->
+    <div class="block-wrap">
+      <div class="sample">
+        <h3>H6 How razorback-jumping frogs can level six piqued gymnasts!</h3>
+      </div>
+      <div class="moustache"></div>
+      <div class="dash"></div>
+      <div class="description">
+        <p class="system">
+          H3
+        </p>
+        <p>
+          <span class="system highlight-green">p =
+          <br>font-size : 2<span class="highlight-pink">em</span>;
+          <br>line-height : 2.5<span class="highlight-yellow">rem</span>;
+          <br>margin-bottom : 2.5<span class="highlight-yellow">rem</span>;
+          </span>
+        </p>
+      </div>
+    </div>
+
+
+
+  <!-- H4 -->
+    <div class="block-wrap">
+      <div class="sample">
+        <h4>H6 How razorback-jumping frogs can level six piqued gymnasts!</h4>
+      </div>
+      <div class="moustache"></div>
+      <div class="dash"></div>
+      <div class="description">
+        <p class="system">
+          H4
+        </p>
+        <p>
+          <span class="system highlight-green">p =
+          <br>font-size : 1.5<span class="highlight-pink">em</span>;
+          <br>line-height : 2<span class="highlight-yellow">rem</span>;
+          <br>margin-bottom : 1.5<span class="highlight-yellow">rem</span>;
+          <br>text-transform : uppercase;
+          </span>
+        </p>
+      </div>
+    </div>
+
+
+  <!-- H5 -->
+    <div class="block-wrap">
+      <div class="sample">
+        <h5>H6 How razorback-jumping frogs can level six piqued gymnasts!</h5>
+      </div>
+      <div class="moustache"></div>
+      <div class="dash"></div>
+      <div class="description">
+        <p class="system">
+          H5
+        </p>
+        <p>
+          <span class="system highlight-green">p =
+          <br>font-size : 1.5<span class="highlight-pink">em</span>;
+          <br>line-height : 2<span class="highlight-yellow">rem</span>;
+          <br>margin-bottom : 1.5<span class="highlight-yellow">rem</span>;
+          </span>
+        </p>
+      </div>
+    </div>
+
+
+<!-- H6 -->
+  <div class="block-wrap">
+    <div class="sample">
+      <h6>H6 How razorback-jumping frogs can level six piqued gymnasts!</h6>
+    </div>
+    <div class="moustache"></div>
+    <div class="dash"></div>
+    <div class="description">
+      <p class="system">
+        H6
+      </p>
+      <p>
+        <span class="system highlight-green">p =
+        <br>font-size : 1<span class="highlight-pink">em</span>;
+        <br>line-height : 1.5<span class="highlight-yellow">rem</span>;
+        <br>margin-bottom : 1<span class="highlight-yellow">rem</span>;
+        </span>
+      </p>
+    </div>
+  </div>
+
+  <div class="block-wrap">
+    <div class="sample">
+      <p style="font-size: 1.5em;margin-bottom: 1rem;line-height:2rem;">
+        A pangram. How razorback-jumping frogs can level six piqued gymnasts! How razorback-jumping frogs can level six piqued gymnasts!
+      </p>
+      <p style="font-size: 1.5em;margin-bottom: 1rem;line-height:2rem;">
+        How razorback-jumping frogs can level six piqued gymnasts! How razorback-jumping frogs can level six piqued gymnasts!
+      </p>
+    </div>
+    <div class="moustache"></div>
+    <div class="dash"></div>
+    <div class="description">
+      <p class="system">
+        This document is set at <span class="highlight-pink">100%</span>. <br><br><br>If I want a paragraph written in <span class="highlight-yellow">24px</span> then I have to set that paragraph to:
+      </p>
+      <p>
+        <span class="system highlight-green">p =
+        <br>font-size : 1.5<span class="highlight-pink">em</span>;
+        <br>line-height : 2<span class="highlight-yellow">rem</span>;
+        <br>margin-bottom : 1<span class="highlight-yellow">rem</span>;
+        </span>
+      </p>
+    </div>
+  </div>
+
+
+  <div class="block-wrap">
+    <div class="sample">
+      <p style="font-size: 1.125em;margin-bottom: 1rem;line-height:1.5rem;">
+        How razorback-jumping frogs can level six piqued gymnasts! How razorback-jumping frogs can level six piqued gymnasts!</p>
+      <p style="font-size: 1.125em;margin-bottom: 1rem;line-height:1.5rem;">
+        How razorback-jumping frogs can level six piqued gymnasts! How razorback-jumping frogs can level six piqued gymnasts!</p>
+    </div>
+    <div class="moustache"></div>
+    <div class="dash"></div>
+    <div class="description">
+      <p class="system">This document is set at <span class="highlight-pink">100%</span>. <br><br>If I want a paragraph written in <span class="highlight-yellow">18px</span> then I have to set that paragraph to:
+      </p>
+      <p>
+        <span class="system highlight-green">  p =
+          <br>font-size : 1.125<span class="highlight-pink">em</span>;
+        <br>line-height : 1.5<span class="highlight-yellow">rem</span>;
+        <br>margin-bottom : 1<span class="highlight-yellow">rem</span>;
+        </span>
+      </p>
+    </div>
+  </div>
+
+
+  <div class="block-wrap">
+    <div class="sample">
+      <p style="font-size: 1.0em;margin-bottom: 1rem;line-height:1.5rem;">
+        How razorback-jumping frogs can level six piqued gymnasts! How razorback-jumping frogs can level six piqued gymnasts!</p>
+      <p style="font-size: 1.0em;margin-bottom: 1rem;line-height:1.5rem;">
+        How razorback-jumping frogs can level six piqued gymnasts! How razorback-jumping frogs can level six piqued gymnasts!</p>
+    </div>
+    <div class="moustache"></div>
+    <div class="dash"></div>
+    <div class="description">
+      <p class="system">This document is set at <span class="highlight-pink">100%</span>. <br><br>If I want a paragraph written in <span class="highlight-yellow">16px</span> then I have to set that paragraph to:
+      </p>
+      <p>
+        <span class="system highlight-green">  p =
+          <br>font-size : 1.0<span class="highlight-pink">em</span>;
+        <br>line-height : 1.5<span class="highlight-yellow">rem</span>;
+        <br>margin-bottom : 1<span class="highlight-yellow">rem</span>;
+        </span>
+      </p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <div class="block-wrap">
+    <div class="sample">
+      <p style="font-size: 0.875em;margin-bottom: 1rem;line-height:1.0rem;">
+        How razorback-jumping frogs can level six piqued gymnasts! How razorback-jumping frogs can level six piqued gymnasts!</p>
+      <p style="font-size: 0.875em;margin-bottom: 1rem;line-height:1.0rem;">
+        How razorback-jumping frogs can level six piqued gymnasts! How razorback-jumping frogs can level six piqued gymnasts!</p>
+    </div>
+
+    <div class="moustache"></div>
+    <div class="dash"></div>
+    <div class="description">
+      <p class="system">This document is set at <span class="highlight-pink">100%</span>. <br><br>If I want a paragraph written in <span class="highlight-yellow">14px</span> then I have to set that paragraph to:
+      </p>
+      <p>
+        <span class="system highlight-green ">  p =
+          <br>font-size: 0.875<span class="highlight-pink">em</span>;
+        <br>margin-bottom : 1.0<span class="highlight-yellow">rem</span>;
+        <br>line-height : 1.0<span class="highlight-yellow">rem</span>;
+        </span>
+      </p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <div class="block-wrap">
+    <div class="sample">
+      <p style="font-size: 0.750em;margin-bottom: 0.5rem;line-height:1rem; ">How razorback-jumping frogs can level six piqued gymnasts! How razorback-jumping frogs can level six piqued gymnasts!</p>
+      <p style="font-size: 0.750em;margin-bottom: 0.5rem;line-height:1rem; ">How razorback-jumping frogs can level six piqued gymnasts! How razorback-jumping frogs can level six piqued gymnasts!</p>
+    </div>
+    <div class="moustache"></div>
+    <div class="dash"></div>
+    <div class="description">
+      <p class="system ">This document is set at <span class="highlight-pink ">100%</span>. <br><br>If I want a paragraph written in <span class="highlight-yellow ">12px</span> then I have to set that paragraph to:
+      </p>
+      <p>
+        <span class="system highlight-green ">  p =
+        <br>font-size : 0.750<span class="highlight-pink">em</span>;
+        <br>margin-bottom : 0.25<span class="highlight-yellow">rem</span>;
+        <br>line-height : 1<span class="highlight-yellow">rem</span>;
+        </span>
+      </p>
+    </div>
+  </div>
+
+  <h3>Examples</h3>
+  <p class="system">P with line-height : 1.5rem</p>
+  <p>Electricity is the movement of electrons. Electrons create charge, which we can harness to do work. Your lightbulb, your stereo, your phone, etc., are all harnessing the movement of the electrons in order to do work. They all
+    operate
+    using the same basic power source: the movement of electrons.</p>
+
+  <p class="system">P with line-height : 2rem</p>
+  <p style="line-height:2rem">Electricity is the movement of electrons. Electrons create charge, which we can harness to do work. Your lightbulb, your stereo, your phone, etc., are all harnessing the movement of the electrons in
+    order to do work. They all operate
+    using the same basic power source: the movement of electrons.</p>
+
+
+    <p class="system">A < Header > with an H1 + H5 + button</p>
+
+      <header>
+        <h1>H1 How razorback-jumping frogs can level six piqued gymnasts!</h1>
+        <h5>H5 How razorback-jumping frogs can level six piqued gymnasts!</h5>
+        <button class="size_default state_inactive icon_none priority_primary btn">Subscribe to out doctrines</button>
+      </header>
+<p></p>
+    <p class="system">An H1 followed by a normal pararaph</p>
+    <h1>H1 How razorback-jumping frogs can level six piqued gymnasts!</h1>
+    <p>P H1 How razorback-jumping frogs can level six piqued gymnasts! H1 How razorback-jumping frogs can level six piqued gymnasts!</p>
+
+
+</section>
+<!--#include virtual="includes/bodystop.shtml" -->
+<!--#include virtual="includes/htmlstop.shtml" -->

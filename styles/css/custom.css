@@ -1,0 +1,193 @@
+@charset "UTF-8";
+/* Base units */
+/*Grønt Punkt colors*/
+/* Usage:
+@include box-shadow();
+*/
+#contents {
+  padding: 4em;
+  width: 100%;
+  margin: auto;
+}
+
+* {
+  font-family: "FiraCode-Light";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "FiraCode-Light";
+  font-size: 1em;
+}
+
+p,
+label,
+input,
+ul,
+ol,
+li,
+th,
+td {
+  font-family: "FiraCode-Light";
+}
+
+.system,
+.system a {
+  font-family: "FiraCode-Light";
+  text-transform: uppercase;
+  color: #006a7f;
+  line-height: 1rem;
+  font-size: 1rem;
+}
+
+.system a {
+  text-decoration: none;
+}
+
+span.highlight-yellow {
+  font-family: "FiraCode-Light";
+  color: #48ebc4;
+  line-height: 1rem;
+  font-size: 1rem;
+}
+
+span.highlight-pink {
+  font-family: "FiraCode-Light";
+  color: #006a7f;
+  line-height: 1rem;
+  font-size: 1rem;
+}
+
+span.highlight-orange {
+  font-family: "FiraCode-Light";
+  color: #48ebc4;
+  line-height: 1rem;
+  font-size: 1rem;
+}
+
+span.highlight-blue {
+  font-family: "FiraCode-Light";
+  color: #00d5ff;
+  line-height: 1rem;
+  font-size: 1rem;
+}
+
+span.highlight-green {
+  font-family: "FiraCode-Light";
+  color: #00b195;
+  line-height: 1rem;
+  font-size: 1rem;
+}
+
+span.highlight-green-light {
+  font-family: "FiraCode-Light";
+  color: #00b195;
+  line-height: 1rem;
+  font-size: 1rem;
+}
+
+hr {
+  background-color: #4bbed2;
+}
+
+br {
+  line-height: 16px;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+fieldset {
+  margin-bottom: 4rem;
+}
+
+figure {
+  padding: 4rem;
+  border: solid 0.5rem #000;
+}
+
+.block-wrap {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+
+.sample {
+  width: 100%;
+  align-self: center;
+  padding-top: 1rem;
+}
+
+.moustache {
+  border: solid 1px #00b195;
+  border-left: 0;
+  min-width: 1em;
+  margin-left: 1rem;
+}
+
+.dash {
+  background-color: #00b195;
+  align-self: center;
+  min-width: 1em;
+  height: 1px;
+}
+
+.description {
+  align-self: center;
+}
+.description p {
+  margin: 1rem;
+  background: transparent;
+}
+
+.overlay {
+  border-top: solid 1px hotpink;
+  border-bottom: solid 1px hotpink;
+  width: 100%;
+  position: fixed;
+  height: 1rem;
+  top: 50vh;
+  display: none;
+}
+
+.c4,
+.c6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.c7 {
+  width: 8rem;
+}
+
+/*c8 has the specs - need to lay it out horizontally*/
+.c8 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.specs {
+  border-left: solid 1px hotpink;
+  width: 50%;
+}
+
+.specs {
+  margin-left: 2rem;
+  line-height: 1.5rem;
+  font-size: 1em;
+}
+
+td {
+  flex: 1;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=custom.css.map */

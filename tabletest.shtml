@@ -1,0 +1,711 @@
+<!--#include virtual="includes/htmlstart.shtml" -->
+<!--#include virtual="includes/headstart.shtml" -->
+<!--#include virtual="includes/meta.shtml" -->
+<!--#include virtual="includes/title.shtml" -->
+<link rel="stylesheet" href="styles/css/normalise.css">
+<link rel="stylesheet" href="styles/css/variables.css">
+<link rel="stylesheet" href="styles/css/fonts.css">
+<link rel="stylesheet" href="styles/css/size-16.css">
+<link rel="stylesheet" href="styles/css/forms.css">
+<link rel="stylesheet" href="styles/css/buttons.css">
+<link rel="stylesheet" href="styles/css/lists.css">
+<link rel="stylesheet" href="styles/css/images.css">
+<link rel="stylesheet" href="styles/css/tables.css">
+<link rel="stylesheet" href="styles/css/backgrounds.css">
+<link rel="stylesheet" href="styles/css/shadows.css">
+<link rel="stylesheet" href="styles/css/paddings-margins.css">
+<link rel="stylesheet" href="styles/css/modifiers.css">
+<link rel="stylesheet" href="styles/css/component_header.css">
+
+
+
+
+<link rel="stylesheet" href="styles/css/custom.css">
+
+<style>
+html, a {
+  scroll-behavior: smooth;
+}
+
+details {
+  padding: 1rem;
+}
+.stickyMenu {
+  position: static;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+}
+
+.stickyMenu > li > a {
+  color: #89FFEE;
+  text-decoration: none;
+}
+
+.stickyMenu > li > a:hover {
+  color: #FA1EFF;
+  text-decoration: underline;
+}
+
+h3 {
+  padding-top: 8rem;
+  background-image: linear-gradient(
+    135deg,
+    #cccccc 10%,
+    #ffffff 10%,
+    #ffffff 50%,
+    #cccccc 50%,
+    #cccccc 60%,
+    #ffffff 60%,
+    #ffffff 100%
+  );
+  background-size: 5px 5px;
+  border-bottom: 1px solid hotpink;
+}
+
+td table table table table td {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+
+  background-size: 64px 64px, 64px 64px, 8px 8px, 8px 8px;
+  background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
+}
+</style>
+
+
+<!--#include virtual="includes/headstop.shtml" -->
+<!--#include virtual="includes/bodystart.shtml" -->
+<!--#include virtual="includes/browsehappy.shtml" -->
+
+
+<header>
+  <div id="bar-branding">3665 Design System</div>
+  <div id="bar-title">Buttons</div>
+  <!--
+  <div id="bar-contents"><ul>
+    <li>Buttons colors</li>
+    <li>Generating bttons</li>
+    <li>variants</li>
+  </ul></div>
+-->
+</header>
+
+
+<section id="contents">
+<!--
+<h1>Color variables for buttons</h1>
+<p>Use variables in variables</p>
+<ul>
+<li>$grey: rgba(218, 218, 218, 1);</li>
+<li>$grey-light: rgba(236, 236, 236, 1);</li>
+<li>$grey-medium: rgba(141, 141, 141, 1);</li>
+</ul>
+<p>A primary button in it's inactive state will have these variables:</p>
+<ul>
+  <li>$color-button-primary-background-inactive</li>
+  <li>$color-button-primary-label-inactive</li>
+  <li>$color-button-primary-svg-inactive</li>
+  <li>$color-button-primary-border-inactive</li>
+</ul>
+
+<p>A primary button's full set of color variables:</p>
+<ul>
+  <li>inactive:</li>
+  <ul>
+  <li>$color-button-primary-background-inactive</li>
+  <li>$color-button-primary-label-inactive</li>
+  <li>$color-button-primary-svg-inactive</li>
+  <li>$color-button-primary-border-inactive</li>
+  </ul>
+  <li>active:</li>
+  <ul>
+  <li>$color-button-primary-background-active</li>
+  <li>$color-button-primary-label-active</li>
+  <li>$color-button-primary-svg-active</li>
+  <li>$color-button-primary-border-active</li>
+  </ul>
+  <li>hover:</li>
+  <ul>
+  <li>$color-button-primary-background-hover</li>
+  <li>$color-button-primary-label-hover</li>
+  <li>$color-button-primary-svg-hover</li>
+  <li>$color-button-primary-border-hover</li>
+  </ul>
+  <li>focus:</li>
+  <ul>
+  <li>$color-button-primary-background-focus</li>
+  <li>$color-button-primary-label-focus</li>
+  <li>$color-button-primary-svg-focus</li>
+  <li>$color-button-primary-border-focus</li>
+  </ul>
+  <li>disabled:</li>
+  <ul>
+  <li>$color-button-primary-background-disabled</li>
+  <li>$color-button-primary-label-disabled</li>
+  <li>$color-button-primary-svg-disabled</li>
+  <li>$color-button-primary-border-disabled</li>
+  </ul>
+  <li>selected/current:</li>
+  <ul>
+  <li>$color-button-primary-background-selected</li>
+  <li>$color-button-primary-label-selected</li>
+  <li>$color-button-primary-svg-selected</li>
+  <li>$color-button-primary-border-selected</li>
+  </ul>
+</ul>
+-->
+<label for="small-border-radius"></label>
+<input type="range" id="small-border-radius" value="0" min="0" max="48" step="8" class="slider_small_border_radius"/>
+
+<h3 id="Variants">Variants</h3>
+<p>If you want the buttons to have a minimum width and the contents centered then use:
+  <br/>min-width: xx rem;
+  <br/>justify-content: center;
+</p>
+
+<p><b>NB:</b> all buttons have the following <b></i>flexbox</i></b> properties </br/>
+  display: flex;
+  <br />flex-direction: row;
+  <br />align-items: center;
+</p>
+
+<table id="buttontable-primary" class="table">
+</table>
+<table id="buttontable-secondary" class="table">
+</table>
+<table id="buttontable-tertiary" class="table">
+</table>
+
+</section>
+
+
+<script>
+var contents = document.querySelector('#contents');
+
+var tabletypes = {
+  table_default      : "table-default",
+  table_zebra        : "table-zebra",
+  table_list         : "table-list"
+}
+
+var dssizes = {
+  size_xsmall        : "x-small",
+  size_small         : "small",
+  size_default       : "default",
+  size_large         : "large",
+  size_xlarge        : "x-large"
+};
+
+var buttonpriorities = {
+  priority_primary   : "primary",
+  priority_secondary : "secondary",
+  priority_tertiary  : "tertiary"
+};
+
+var buttonpriority_primary = {
+  priority_primary   : "primary"
+}
+var buttonpriority_secondary = {
+  priority_secondary   : "secondary"
+}
+var buttonpriority_tertiary = {
+  priority_tertiary   : "tertiary"
+}
+
+
+var buttonicons = {
+  icon_none          : "i-none",
+  icon_left          : "i-left",
+  icon_right         : "i-right",
+  icon_only          : "i-only"
+}
+
+var buttonstates = {
+  state_inactive     : "inactive" ,
+  state_active       : "active",
+  state_hover        : "hover",
+  state_focused      : "focused",
+  state_selected     : "selected",
+  state_disabled     : "disabled"
+};
+
+
+
+
+// Table stuff
+
+let buttontable_primary    = document.querySelector("#buttontable-primary");
+let buttontable_secondary  = document.querySelector("#buttontable-secondary");
+let buttontable_tertiary   = document.querySelector("#buttontable-tertiary");
+
+/*
+1. for each variant in the tableVariants array
+2. generate a tables
+3. append to document
+*/
+
+function makeTableVariant (){
+  for (var ttype in tabletypes) {
+    if (tabletypes.hasOwnProperty(ttype)) {
+        let t = document.createElement('table');
+        let r1 = t.insertRow();
+        let r2 = t.insertRow();
+        let r3 = t.insertRow();
+
+        let c1 = r1.insertCell();
+        let c2 = r1.insertCell();
+
+        let c3 = r2.insertCell();
+        let c4 = r2.insertCell();
+
+        let c5 = r3.insertCell();
+        let c6 = r3.insertCell();
+
+        c1.innerHTML = "I am a" + ' ' + ttype + ' ' + "table";
+        c2.innerHTML = "I am a" + ' ' + ttype + ' ' + "table";
+        c3.innerHTML = "I am a" + ' ' + ttype + ' ' + "table";
+        c4.innerHTML = "I am a" + ' ' + ttype + ' ' + "table";
+        c5.innerHTML = "I am a" + ' ' + ttype + ' ' + "table";
+        c6.innerHTML = "I am a" + ' ' + ttype + ' ' + "table";
+
+        t.classList.add(ttype);
+
+        contents.appendChild(t);
+        console.log(t);
+      }
+    }
+}
+
+makeTableVariant ();
+
+
+  function generateTable(table, prio)
+  {
+    let row = table.insertRow();
+    let cell_0 = row.insertCell(0);
+    let cell_1 = row.insertCell(1);
+
+    cell_0.classList.add('cell_0');
+    cell_1.classList.add('cell_1');
+
+    let t = document.createElement('table');
+
+// priorities
+
+    for (var priority in prio) {
+      if (prio.hasOwnProperty(priority)) {
+        // for each priority make a row and 2 cells
+          let r = t.insertRow();
+          let c1 = r.insertCell();
+          let c2 = r.insertCell();
+
+          c1.classList.add('c1');
+          c2.classList.add('c2');
+          c2.innerHTML = "<h3 id=" + priority + ">" + priority + "</h3>";
+
+// sizes
+
+        for (var size in dssizes) {
+        	if (dssizes.hasOwnProperty(size)) {
+              let t = document.createElement('table');
+              let r = t.insertRow();
+              let c3 = r.insertCell();
+              let c4 = r.insertCell();
+
+              c3.classList.add('c3');
+              c4.classList.add('c4');
+              c2.appendChild(t);
+              c4.innerHTML = "<h4>" + size + "</h4>";
+
+// states
+              for (var state in buttonstates) {
+                if (buttonstates.hasOwnProperty(state)) {
+                    let t = document.createElement('table');
+                    let r = t.insertRow();
+                    let c5 = r.insertCell();
+                    let c6 = r.insertCell();
+
+                    c5.classList.add('c5');
+                    c6.classList.add('c6');
+                    c4.appendChild(t);
+                    c6.innerHTML = "<h5>" + state + "</h5>";
+
+
+
+// icons - have or have not
+
+                      for (var icon in buttonicons) {
+                        if (buttonicons.hasOwnProperty(icon)) {
+                            let t = document.createElement('table');
+                            let r = t.insertRow();
+                            let c7 = r.insertCell();
+                            let c8 = r.insertCell();
+                          //  let c9 = r.insertCell();
+                            c7.classList.add('c7');
+                            c8.classList.add('c8');
+                            c6.appendChild(t);
+                            c7.innerHTML = icon;
+
+
+
+// Add the buttons
+                            if(icon == 'icon_only'){
+                              c8.innerHTML =
+                              '<button class="'
+                              + size
+                              + ' '
+                              + priority
+                              + ' '
+                              + icon
+                              + ' '
+                              + state
+                              + ' btn">'
+                              + '<svg width=\"20\" height=\"20\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M0 10c0 5.52 4.47 10 9.99 10C15.52 20 20 15.52 20 10S15.52 0 9.99 0C4.47 0 0 4.48 0 10zm2 0c0-4.42 3.58-8 8-8s8 3.58 8 8-3.58 8-8 8-8-3.58-8-8zm7-2v7h2V8H9zm0-3v2h2V5H9z\" fill-rule=\"evenodd\"/>\n</svg>'
+                              + '</button>'
+                              ;
+                            }
+
+                            if(icon == 'icon_only' && size == 'size_xsmall'){
+                              c8.innerHTML =
+                              '<button class="'
+                              + size
+                              + ' '
+                              + priority
+                              + ' '
+                              + icon
+                              + ' '
+                              + state
+                              + ' btn">'
+                              + '<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14ZM8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z\" /><path d=\"M7 7H9V12H7V7Z\" /><path d=\"M9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5Z\" /></svg>'
+                              + '</button>'
+                              ;
+                            }
+
+                            if(icon == 'icon_only' && size == 'size_xlarge'){
+                              c8.innerHTML =
+                              '<button class="'
+                              + size
+                              + ' '
+                              + priority
+                              + ' '
+                              + icon
+                              + ' '
+                              + state
+                              + ' btn">'
+                              + '<svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16 29C23.1797 29 29 23.1797 29 16C29 8.8203 23.1797 3 16 3C8.8203 3 3 8.8203 3 16C3 23.1797 8.8203 29 16 29ZM16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z\" /><path d=\"M15 11H18V25H15V11Z\" /><path d=\"M18 7.5C18 8.32843 17.3284 9 16.5 9C15.6716 9 15 8.32843 15 7.5C15 6.67157 15.6716 6 16.5 6C17.3284 6 18 6.67157 18 7.5Z\" /></svg>'
+                              + '</button>'
+                              ;
+                            }
+
+                            else if (icon == 'icon_left'){
+                              c8.innerHTML =
+                              '<button class="'
+                              + size
+                              + ' '
+                              + priority
+                              + ' '
+                              + icon
+                              + ' '
+                              + state
+                              + ' btn">'
+                              + '<svg width=\"20\" height=\"20\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M0 10c0 5.52 4.47 10 9.99 10C15.52 20 20 15.52 20 10S15.52 0 9.99 0C4.47 0 0 4.48 0 10zm2 0c0-4.42 3.58-8 8-8s8 3.58 8 8-3.58 8-8 8-8-3.58-8-8zm7-2v7h2V8H9zm0-3v2h2V5H9z\" fill-rule=\"evenodd\"/>\n</svg>'
+                              + 'Button'
+                              + '</button>'
+                              ;
+                            }
+
+                             if (icon == 'icon_left' && size == 'size_xsmall'){
+                              c8.innerHTML =
+                              '<button class="'
+                              + size
+                              + ' '
+                              + priority
+                              + ' '
+                              + icon
+                              + ' '
+                              + state
+                              + ' btn">'
+                              + '<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14ZM8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z\" /><path d=\"M7 7H9V12H7V7Z\" /><path d=\"M9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5Z\" /></svg>'
+                              + 'Button'
+                              + '</button>'
+                              ;
+                            }
+
+                            if (icon == 'icon_left' && size == 'size_xlarge'){
+                             c8.innerHTML =
+                             '<button class="'
+                             + size
+                             + ' '
+                             + priority
+                             + ' '
+                             + icon
+                             + ' '
+                             + state
+                             + ' btn">'
+                             + '<svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16 29C23.1797 29 29 23.1797 29 16C29 8.8203 23.1797 3 16 3C8.8203 3 3 8.8203 3 16C3 23.1797 8.8203 29 16 29ZM16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z\" /><path d=\"M15 11H18V25H15V11Z\" /><path d=\"M18 7.5C18 8.32843 17.3284 9 16.5 9C15.6716 9 15 8.32843 15 7.5C15 6.67157 15.6716 6 16.5 6C17.3284 6 18 6.67157 18 7.5Z\" /></svg>'
+                             + 'Button'
+                             + '</button>'
+                             ;
+                           }
+
+                            if (icon == 'icon_left' && size == 'size_xlarge'){
+                             c8.innerHTML =
+                             '<button class="'
+                             + size
+                             + ' '
+                             + priority
+                             + ' '
+                             + icon
+                             + ' '
+                             + state
+                             + ' btn">'
+                             + '<svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16 29C23.1797 29 29 23.1797 29 16C29 8.8203 23.1797 3 16 3C8.8203 3 3 8.8203 3 16C3 23.1797 8.8203 29 16 29ZM16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z\" /><path d=\"M15 11H18V25H15V11Z\" /><path d=\"M18 7.5C18 8.32843 17.3284 9 16.5 9C15.6716 9 15 8.32843 15 7.5C15 6.67157 15.6716 6 16.5 6C17.3284 6 18 6.67157 18 7.5Z\" /></svg>'
+                             + 'Button'
+                             + '</button>'
+                             ;
+                           }
+
+                            else if(icon == 'icon_right'){
+                                c8.innerHTML =
+                                '<button class="'
+                                + size
+                                + ' '
+                                + priority
+                                + ' '
+                                + icon
+                                + ' '
+                                + state
+                                + ' btn">'
+                                + 'Button'
+                                    + '<svg width=\"20\" height=\"20\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M0 10c0 5.52 4.47 10 9.99 10C15.52 20 20 15.52 20 10S15.52 0 9.99 0C4.47 0 0 4.48 0 10zm2 0c0-4.42 3.58-8 8-8s8 3.58 8 8-3.58 8-8 8-8-3.58-8-8zm7-2v7h2V8H9zm0-3v2h2V5H9z\" fill-rule=\"evenodd\"/>\n</svg>'
+                                + '</button>'
+                                ;
+                            }
+
+                            if(icon == 'icon_right' && size == 'size_xsmall'){
+                                c8.innerHTML =
+                                '<button class="'
+                                + size
+                                + ' '
+                                + priority
+                                + ' '
+                                + icon
+                                + ' '
+                                + state
+                                + ' btn">'
+                                + 'Button'
+                              + '<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14ZM8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z\" /><path d=\"M7 7H9V12H7V7Z\" /><path d=\"M9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5Z\" /></svg>'
+                                + '</button>'
+                                ;
+                            }
+
+
+                            if(icon == 'icon_right' && size == 'size_xlarge'){
+                                c8.innerHTML =
+                                '<button class="'
+                                + size
+                                + ' '
+                                + priority
+                                + ' '
+                                + icon
+                                + ' '
+                                + state
+                                + ' btn">'
+                                + 'Button'
+                              + '<svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16 29C23.1797 29 29 23.1797 29 16C29 8.8203 23.1797 3 16 3C8.8203 3 3 8.8203 3 16C3 23.1797 8.8203 29 16 29ZM16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z\" /><path d=\"M15 11H18V25H15V11Z\" /><path d=\"M18 7.5C18 8.32843 17.3284 9 16.5 9C15.6716 9 15 8.32843 15 7.5C15 6.67157 15.6716 6 16.5 6C17.3284 6 18 6.67157 18 7.5Z\" /></svg>'
+                                + '</button>'
+                                ;
+                            }
+
+
+
+
+                            else if(icon == 'icon_none'){
+                                c8.innerHTML =
+                                '<button class="'
+                                + size
+                                + ' '
+                                + priority
+                                + ' '
+                                + icon
+                                + ' '
+                                + state
+                                + ' btn">'
+                                + 'Button'
+                                + '</button>'
+                                ;
+                            }
+
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+      cell_1.appendChild(t);
+  }
+
+
+  generateTable(buttontable_primary, buttonpriority_primary);
+  generateTable(buttontable_secondary, buttonpriority_secondary);
+  generateTable(buttontable_tertiary, buttonpriority_tertiary);
+
+  // Make a menu
+
+  var menu = document.createElement('ul');
+  menu.classList.add('stickyMenu');
+  contents.prepend(menu);
+
+  var headers_h3 = document.getElementsByTagName('h3');
+
+  for (var i = 0; i < headers_h3.length; i++) {
+    var headerTitle = headers_h3[i].textContent;
+    var listitem = document.createElement('li');
+    listitem.innerHTML = "<a href=" + "#" + headerTitle + ">" + headerTitle; + "</a>";
+    listitem.classList.add('listitem');
+
+    menu.appendChild(listitem);
+
+
+  }
+
+
+//Disable the disabled
+
+  var disableButts = document.getElementsByTagName('button');
+  for(var i = 0; i < disableButts.length; i++){
+    if(disableButts[i].classList.contains('state_disabled')){
+      //disableButts[i].disabled = true;
+      disableButts[i].setAttribute('disabled', 'disabled');
+    }
+  };
+
+  var everyButt = document.getElementsByTagName('button');
+  for(var i = 0; i < everyButt.length; i++){
+    //console.log(everyButt[i]);
+    var para = document.createElement('div');
+
+    para.classList.add('specs');
+    let compStyles = getComputedStyle(everyButt[i]);
+    everyButt[i].after(para);
+
+
+
+
+
+    // + "svg:" + ' ' + compSVGStyles.getPropertyValue('width');
+
+    var theSVG;
+    var theSVGstyle;
+    var svgWidth;
+    var svgHeight;
+    var svgColor;
+    var svgMarginRight;
+    var svgMarginLeft;
+
+    if (everyButt[i].classList.contains('icon_left')){
+      theSVG = everyButt[i].firstChild;
+      theSVGstyle = getComputedStyle(theSVG);
+      svgWidth = theSVGstyle.getPropertyValue('width');
+      svgHeight = theSVGstyle.getPropertyValue('height');
+      svgColor = theSVGstyle.getPropertyValue('color');
+      svgMarginRight  = theSVGstyle.getPropertyValue('margin-right');
+      svgMarginLeft  = theSVGstyle.getPropertyValue('margin-left');
+
+    } else if (everyButt[i].classList.contains('icon_right')){
+      theSVG = everyButt[i].lastChild;
+      theSVGstyle = getComputedStyle(theSVG);
+      svgWidth = theSVGstyle.getPropertyValue('width');
+      svgHeight = theSVGstyle.getPropertyValue('height');
+      svgColor = theSVGstyle.getPropertyValue('color');
+      svgMarginRight  = theSVGstyle.getPropertyValue('margin-right');
+      svgMarginLeft  = theSVGstyle.getPropertyValue('margin-left');
+    } else if (everyButt[i].classList.contains('icon_only')){
+      theSVG = everyButt[i].lastChild;
+      theSVGstyle = getComputedStyle(theSVG);
+      svgWidth = theSVGstyle.getPropertyValue('width');
+      svgHeight = theSVGstyle.getPropertyValue('height');
+      svgColor = theSVGstyle.getPropertyValue('color');
+      svgMarginRight  = theSVGstyle.getPropertyValue('margin-right');
+      svgMarginLeft  = theSVGstyle.getPropertyValue('margin-left');
+    }
+
+
+
+
+    para.innerHTML =
+    '<details>'
+    + '<summary>Style properties:</summary>'
+    + "font-size:" + ' ' + compStyles.getPropertyValue('font-size')
+    + '<br>'
+    + "font-weight:" + ' ' + compStyles.getPropertyValue('font-weight')
+    + '<br>'
+    + "line-height:" + ' ' + compStyles.getPropertyValue('line-height')
+    + '<br>'
+    + "color:" + ' ' + compStyles.getPropertyValue('color')
+    + '<br>'
+    + "border-top-left-radius:" + ' ' + compStyles.getPropertyValue('border-top-left-radius')
+    + '<br>'
+    + "border-thickness:" + ' ' + compStyles.getPropertyValue('border-top-width')
+    + '<br>'
+    + "border-color:" + ' ' + compStyles.getPropertyValue('border-top-color')
+    + '<br>'
+    + "padding-bottom:" + ' ' + compStyles.getPropertyValue('padding-bottom')
+    + '<br>'
+    + "padding-top:" + ' ' + compStyles.getPropertyValue('padding-top')
+    + '<br>'
+    + "background-color:" + ' ' + compStyles.getPropertyValue('background-color')
+    + '<br>'
+    + '</details>';
+
+
+
+    if (everyButt[i].classList.contains('icon_left') || everyButt[i].classList.contains('icon_right') || everyButt[i].classList.contains('icon_only') ){
+    para.innerHTML +=
+    '<details>'
+    + '<summary>SVG icon properties:</summary>'
+    + '<br>'
+    +  "svg width:" + ' ' + svgWidth
+    + '<br>'
+    + "svg height:" + ' ' + svgHeight
+    + '<br>'
+    + "svg color:" + ' ' + svgColor
+    + '<br>'
+    + "svg margin right:" + ' ' + svgMarginRight
+    + '<br>'
+    + "svg margin left:" + ' ' + svgMarginLeft;
+  };
+}
+
+
+
+
+</script>
+
+
+<script>
+window.addEventListener('input', function(e){
+  const slider_small_border_radius = document.querySelector('.slider_small_border_radius');
+  const btns = document.querySelectorAll('.btn');
+  var r_val = slider_small_border_radius.value;
+  var index = 0, length = btns.length;
+//console.log(btns);
+  for(index; index < length; index++){
+      btns[index].style.borderTopLeftRadius = r_val + 'px';
+      console.log(btns[index].style);
+  };
+
+
+
+});
+</script>
+</html>

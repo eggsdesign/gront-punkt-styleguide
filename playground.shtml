@@ -1,0 +1,43 @@
+<!--#include virtual="includes/htmlstart.shtml" -->
+<!--#include virtual="includes/headstart.shtml" -->
+<!--#include virtual="includes/meta.shtml" -->
+<!--#include virtual="includes/title.shtml" -->
+<link rel="stylesheet" href="styles/css/normalise.css">
+
+
+<style>
+p {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.green {
+  background-color: #CCFF8A;
+  margin-bottom: 1.5rem;
+}
+.pink {
+  background-color: #FF8ADE;
+  margin-bottom: 1.5rem;
+}
+.blue {
+  margin-top: 1.5rem;
+  background-color: #8AEAFF;
+  margin-bottom: 1.5rem;
+}
+</style>
+
+
+<!--#include virtual="includes/headstop.shtml" -->
+<!--#include virtual="includes/bodystart.shtml" -->
+<!--#include virtual="includes/browsehappy.shtml" -->
+
+
+<section id="contents">
+<h1>Collapsing margins</h1>
+<p class="green">Top and bottom margins of blocks are sometimes combined (collapsed) into a single margin whose size is the largest of the margins combined into it, a behavior known as margin collapsing.</p>
+<p class="pink">Top and bottom margins of blocks are sometimes combined (collapsed) into a single margin whose size is the largest of the margins combined into it, a behavior known as margin collapsing.</p>
+<p class="blue">Top and bottom margins of blocks are sometimes combined (collapsed) into a single margin whose size is the largest of the margins combined into it, a behavior known as margin collapsing.</p>
+</section>
+<!--#include virtual="includes/bodystop.shtml" -->
+<!--#include virtual="includes/htmlstop.shtml" -->

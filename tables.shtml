@@ -1,0 +1,276 @@
+<!--#include virtual="includes/htmlstart.shtml" -->
+<!--#include virtual="includes/headstart.shtml" -->
+<!--#include virtual="includes/meta.shtml" -->
+<!--#include virtual="includes/title.shtml" -->
+<link rel="stylesheet" href="styles/css/normalise.css">
+<link rel="stylesheet" href="styles/css/variables.css">
+<link rel="stylesheet" href="styles/css/fonts.css">
+<link rel="stylesheet" href="styles/css/size-16.css">
+<link rel="stylesheet" href="styles/css/forms.css">
+<link rel="stylesheet" href="styles/css/buttons.css">
+<link rel="stylesheet" href="styles/css/lists.css">
+<link rel="stylesheet" href="styles/css/images.css">
+<link rel="stylesheet" href="styles/css/tables.css">
+<link rel="stylesheet" href="styles/css/backgrounds.css">
+<link rel="stylesheet" href="styles/css/shadows.css">
+<link rel="stylesheet" href="styles/css/paddings-margins.css">
+<link rel="stylesheet" href="styles/css/modifiers.css">
+
+
+<link rel="stylesheet" href="styles/css/custom.css">
+
+
+<!--#include virtual="includes/headstop.shtml" -->
+<!--#include virtual="includes/bodystart.shtml" -->
+<!--#include virtual="includes/browsehappy.shtml" -->
+
+
+<section id="contents">
+    <h1>Tables</h1>
+    <h2>Default table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Header 1</th>
+          <th>Header 2</th>
+          <th>Header 3</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Cell 1</td>
+          <td>Cell 2</td>
+          <td>Cell 3</td>
+        </tr>
+        <tr>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+        </tr>
+        <tr>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+        </tr>
+        <tr>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Condensed table</h2>
+    <table class="condensed">
+      <thead>
+        <tr>
+          <th>Header 1</th>
+          <th>Header 2</th>
+          <th>Header 3</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Cell 1</td>
+          <td>Cell 2</td>
+          <td>Cell 3</td>
+        </tr>
+        <tr>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+        </tr>
+        <tr>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+        </tr>
+        <tr>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+        </tr>
+        <tr>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Striped table</h2>
+    <table class="striped">
+      <thead>
+        <tr>
+          <th>Header 1</th>
+          <th>Header 2</th>
+          <th>Header 3</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Cell 1</td>
+          <td>Cell 2</td>
+          <td>Cell 3</td>
+        </tr>
+        <tr>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+        </tr>
+        <tr>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+        </tr>
+        <tr>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <h2>Striped & Condensed table</h2>
+    <table class="striped condensed">
+      <thead>
+        <tr>
+          <th>Header 1</th>
+          <th>Header 2</th>
+          <th>Header 3</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Cell 1</td>
+          <td>Cell 2</td>
+          <td>Cell 3</td>
+        </tr>
+        <tr>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+        </tr>
+        <tr>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+        </tr>
+        <tr>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+          <td>How razorback-jumping frogs can level six piqued gymnasts!</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>sdkjfh</p>
+
+    <h1>Forms</h1>
+    <p>The labels for the button rows below have their line-height set to the height of the highest element. So, the large buttons are 48px high, which means the labels have a line height of 3rem.</p>
+    <form action="" class="gp-form">
+      <fieldset>
+
+
+
+        <!--  Row -->
+        <div class="gp-form-row">
+          <!-- Row col 1-->
+          <div class="gp-form-col">
+          </div>
+
+          <!-- Row col 2-->
+          <div class="gp-form-col">
+          </div>
+        </div>
+
+
+        <!--  END Row -->
+
+        <p>The inputs have their border removed from their line-height - there's no padding involved</p>
+
+        <!--  Row -->
+        <div class="gp-form-row">
+          <!-- Row col 1-->
+          <div class="gp-form-col">
+            <div><label for="Telefonnummer">White buttons →</label></div>
+          </div>
+
+          <!-- Row col 2-->
+          <div class="gp-form-col">
+            <div>
+              <input type="text" class="gp-input-small">
+            </div>
+          </div>
+        </div>
+        <!--  END Row -->
+
+        <!--  Row -->
+        <div class="gp-form-row">
+          <!-- Row col 1-->
+          <div class="gp-form-col">
+            <div><label for="Telefonnummer">White buttons →</label></div>
+          </div>
+
+          <!-- Row col 2-->
+          <div class="gp-form-col">
+            <div>
+              <input type="text" class="gp-input-default">
+            </div>
+          </div>
+        </div>
+        <!--  END Row -->
+
+        <!--  Row -->
+        <div class="gp-form-row gp-form-row-lh-3rem">
+          <!-- Row col 1-->
+          <div class="gp-form-col">
+            <div><label for="Telefonnummer">White buttons →</label></div>
+          </div>
+
+          <!-- Row col 2-->
+          <div class="gp-form-col">
+            <div>
+              <input type="text" class="gp-input-big">
+            </div>
+          </div>
+        </div>
+        <!--  END Row -->
+
+
+
+        <!--  Row -->
+        <div class="gp-form-row">
+          <!-- Row col 1-->
+          <div class="gp-form-col gp-form-row-lh-2rem">
+            <div><label for="Telefonnummer">White buttons →</label></div>
+          </div>
+
+          <!-- Row col 2-->
+          <div class="gp-form-col">
+            <div>
+              <button class="gp-button gp-button-primary gp-button-default gp-button-icon-left">
+                <span class="icon">
+                  <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 10c0 5.52 4.47 10 9.99 10C15.52 20 20 15.52 20 10S15.52 0 9.99 0C4.47 0 0 4.48 0 10zm2 0c0-4.42 3.58-8 8-8s8 3.58 8 8-3.58 8-8 8-8-3.58-8-8zm7-2v7h2V8H9zm0-3v2h2V5H9z" fill-rule="evenodd"/>
+                  </svg>
+                </span>
+              Icon-left
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--  END Row -->
+
+
+      </fieldset>
+    </form>
+
+<h1>Shadowy boxes</h1>
+<div class="shadowbox background-white rounded padding-x2">
+  This is a rounded box
+</div>
+</section>
+<!--#include virtual="includes/bodystop.shtml" -->
+<!--#include virtual="includes/htmlstop.shtml" -->
