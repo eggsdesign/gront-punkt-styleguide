@@ -13,3 +13,11 @@ x2 = 2 base units
 .padding-x2 {
   padding: 2 * $base-unit;
 }
+
+.margin-bottom-x1 {
+  margin-bottom: $base-unit;
+}
+
+.margin-bottom-x2 {
+  margin-bottom: 2 * $base-unit;
+}

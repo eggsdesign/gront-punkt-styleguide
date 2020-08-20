@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["backgrounds.scss"],"names":[],"mappings":"AAAA;EACE","file":"backgrounds.css"}
+{"version":3,"sourceRoot":"","sources":["variables.scss","backgrounds.scss"],"names":[],"mappings":";AAAA;AAIA;AA6CA;AAAA;AAAA;AC/CA;EACE;;;AAGF;EACE,kBDCW;;;ACEb;EACE,kBDFqB;;;ACKvB;EACE,kBDLqB;;;ACQvB;EACE,kBDEkB;;;ACCpB;EACE,kBDDkB;;;ACIpB;EACE,kBDJkB;;;ACOpB;EACE,kBDPkB","file":"backgrounds.css"}
