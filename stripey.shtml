@@ -1,0 +1,32 @@
+<!--#include virtual="includes/htmlstart.shtml" -->
+<!--#include virtual="includes/headstart.shtml" -->
+<!--#include virtual="includes/meta.shtml" -->
+<!--#include virtual="includes/title.shtml" -->
+<link rel="stylesheet" href="styles/css/normalise.css">
+
+
+
+<style>
+body {
+
+
+
+
+background-image: linear-gradient(#fff 1px, transparent 1px),
+  linear-gradient(90deg, #fff 1px, transparent 1px),
+  linear-gradient(#fff 1px, transparent 1px),
+  linear-gradient(90deg, #fff 1px, transparent 1px);
+
+background-size: 64px 64px, 64px 64px, 8px 8px, 8px 8px;
+background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
+}
+
+
+</style>
+
+
+
+<html>
+
+
+</html>

@@ -8,36 +8,6 @@ $gridLine-dark: rgba(0, 0, 0, $gridOpacity);
   background-color: rgba($r, $g, $b, $opacity);
 }
 
-<<<<<<< HEAD:styles/scss/custom.scss
-#contents {
-  padding: 4em;
-  width: 100%;
-  margin: auto;
-}
-
-* {
-  font-family: "FiraCode-Light";
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "FiraCode-Light";
-  font-size: 1em;
-}
-
-p,
-label,
-input,
-ul,
-ol,
-li,
-th,
-td {
-  font-family: "FiraCode-Light";
-=======
 body,
 html {
   background-color: #fff;
@@ -60,7 +30,6 @@ html {
 
 p {
   border-bottom: 1.5rem solid rgba(231, 252, 249, 1);
->>>>>>> d035e269d5121ed7ff21f192574eeb7b4a34f74b:styles/custom.scss
 }
 
 .system,
@@ -144,21 +113,6 @@ figure {
   border: solid 0.5rem #000;
 }
 
-<<<<<<< HEAD:styles/scss/custom.scss
-=======
-// headers
-
-header {
-  background-color: rgba(23, 228, 196, 0.25);
-}
-
-// Styleguide styling:
-
-table {
-  margin-bottom: 1rem;
-}
-
->>>>>>> d035e269d5121ed7ff21f192574eeb7b4a34f74b:styles/custom.scss
 // Moustaches
 
 .block-wrap {

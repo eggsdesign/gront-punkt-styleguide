@@ -21,12 +21,26 @@
 
 
 <style>
+body {
+  background-image: repeating-linear-gradient(-45deg,
+      transparent,
+      transparent 20px,
+      black 20px,
+      black 40px);
+  /* with multiple color stop lengths */
+  background-image: repeating-linear-gradient(-45deg,
+      transparent 0 20px,
+      black 20px 40px);
+}
+
+
 .main-section {
+  margin-top:
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: hotpink;
+
   height: 150vh;
   position: absolute;
 }
@@ -71,12 +85,12 @@
   <div>
     <p>
         <label>Price From:</label>
-        <input type="range" id="fromPrice" value="0" min="0" max="48" step="8" class="slider_r"/>
+        <input type="range" id="fromPrice" value="0" min="0" max="255" step="1" class="slider_r"/>
         <label id="fPrice"></label>
     </p>
     <p>
         <label>Price To:</label>
-        <input type="range" id="toPrice" value="450" min="0" max="500"
+        <input type="range" id="toPrice" value="450" min="0" max="255"
             oninput="document.getElementById('tPrice').innerHTML = this.value" />
         <label id="tPrice"></label>
     </p>
@@ -98,6 +112,7 @@ window.addEventListener('scroll', function(e){
   const target_1 = document.querySelector('.ball-1');
   const target_2 = document.querySelector('.ball-2');
 
+
   var scrolled = window.pageYOffset;
   var rate = scrolled * 0.5;
   var curve = rate/0.8;
@@ -111,11 +126,25 @@ window.addEventListener('scroll', function(e){
 window.addEventListener('input', function(e){
   const slider_r = document.querySelector('.slider_r');
   const btn = document.querySelector('.btn');
+
+  const main = document.querySelector('.main-section');
+
   var r_val = slider_r.value;
+
   btn.style.backgroundColor = 'rgba(' + r_val + ',' + r_val + ',0,1)';
   btn.style.borderRadius = r_val + 'px';
   btn.style.padding = r_val + 'px';
-  console.log(btn.style);
+
+
+  main.style.background ='linear-gradient(217deg, rgba(255,0,0,.8), rgba(' + r_val + ',0,0) 70.71%)'
+
+/*
+background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+          linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+          linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+*/
+
+  console.log(main.style);
 });
 
 
