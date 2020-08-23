@@ -1,0 +1,297 @@
+<!--#include virtual="includes/htmlstart.shtml" -->
+<!--#include virtual="includes/headstart.shtml" -->
+<!--#include virtual="includes/meta.shtml" -->
+<!--#include virtual="includes/title.shtml" -->
+<link rel="stylesheet" href="styles/css/normalise.css">
+<link rel="stylesheet" href="styles/css/variables.css">
+<link rel="stylesheet" href="styles/css/fonts.css">
+<link rel="stylesheet" href="styles/css/size-16.css">
+<link rel="stylesheet" href="styles/css/forms.css">
+<link rel="stylesheet" href="styles/css/buttons.css">
+<link rel="stylesheet" href="styles/css/lists.css">
+<link rel="stylesheet" href="styles/css/images.css">
+
+<link rel="stylesheet" href="styles/css/backgrounds.css">
+<link rel="stylesheet" href="styles/css/shadows.css">
+<link rel="stylesheet" href="styles/css/paddings-margins.css">
+<link rel="stylesheet" href="styles/css/modifiers.css">
+<link rel="stylesheet" href="styles/css/component_header.css">
+<link rel="stylesheet" href="styles/css/tables.css">
+<link rel="stylesheet" href="styles/css/cards.css">
+
+<link rel="stylesheet" href="styles/css/custom.css">
+
+
+<style>
+.controls {
+  display: flex;
+}
+
+
+
+
+.main_section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+.card_skin {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0.5rem;
+  background-color: hotpink;
+  max-width: 25rem;
+  min-width: 1rem;
+  min-height: 20rem;
+  border-radius: 1rem;
+}
+
+.card_header {
+  height: 3rem;
+  width: 100%;
+  background-color: purple;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  padding: 0 1rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_item {
+  width: 2rem;
+  height: 2rem;
+  background-color: blue;
+}
+
+.card_media {
+  height: 20rem;
+  width: 100%;
+  background-color: green;
+}
+
+.card_text {
+  width: 100%;
+  background-color: rgba(255,255,255,0.5);
+}
+
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
+.order-3 {
+  order: 3;
+}
+
+
+p {
+    width: auto!important;
+}
+</style>
+
+<html>
+<div class="controls">
+<button class="btn size_default priority_secondary" data-gen-cards >Generate card</button>
+<button class="btn size_default priority_secondary" data-add-headers >Add headers to cards</button>
+<button class="btn size_default priority_secondary" data-add-media >Add media to cards</button>
+<button class="btn size_default priority_secondary" data-add-text >Add text to cards</button>
+<button class="btn size_default priority_secondary" data-add-header-item >Add item to headers</button>
+<input type="range" id="fromPrice" value="160" min="0" max="520" class="slider_card_width"/>
+<br>
+<button class="btn size_default priority_secondary" data-clone-card>Clone and add card</button>
+</div>
+<section class="main_section">
+
+
+
+</section>
+
+
+<script>
+
+/*
+1. generate cards
+*/
+const main_section   = document.querySelector('.main_section');
+const butt_gen_cards = document.querySelector('.gen_cards');
+all_the_cards = [];
+all_the_headers = [];
+
+
+
+document.addEventListener('click', function (event) {
+
+	// If the event target doesn't match bail
+	if (!event.target.matches('[data-gen-cards]')) return;
+
+
+  // Generate an element and add it to the main section
+  var card_skin = document.createElement('div');
+  card_skin.classList.add('card_skin');
+  main_section.appendChild(card_skin);
+  all_the_cards.push(card_skin);
+	console.log(all_the_cards);
+}, false);
+
+
+
+
+// When clicked - loop through all the cards and add a header
+
+document.addEventListener('click', function (event) {
+
+// If the event target doesn't match bail
+	if (!event.target.matches('[data-add-headers]')) return;
+
+  for(var i = 0; i < all_the_cards.length; i++){
+    var card_header = document.createElement('div');
+    // First give them all an individual // ID
+    all_the_cards[i].id = "card-" + i;
+    // End the id giving
+    card_header.classList.add('card_header');
+    all_the_headers.push(card_header);
+// Check to see if they have a header already. Is, then dont add another
+      if(!all_the_cards[i].querySelector('.card_header')){
+          all_the_cards[i].appendChild(card_header);
+          card_header.classList.add('order-1');
+      }
+    }
+  }, false);
+
+
+// When clicked - loop through all the cards and add a media
+
+document.addEventListener('click', function (event) {
+  if (!event.target.matches('[data-add-media]')) return;
+  for(var i = 0; i < all_the_cards.length; i++){
+    var card_media = document.createElement('div');
+    card_media.classList.add('card_media');
+// Check to see if they have a media container already. Is, then dont add another
+      if(!all_the_cards[i].querySelector('.card_media')){
+          all_the_cards[i].appendChild(card_media);
+          card_media.classList.add('order-2');
+      }
+    }
+}, false);
+
+
+document.addEventListener('click', function (event) {
+  if (!event.target.matches('[data-add-text]')) return;
+  for(var i = 0; i < all_the_cards.length; i++){
+    var card_text = document.createElement('p');
+    card_text.classList.add('card_text');
+    var para = "Do in laughter securing smallest sensible no mr hastened. As perhaps proceed in in brandon of limited unknown greatly. Distrusts fulfilled happiness unwilling as explained of difficult. ";
+    card_text.innerHTML= para;
+// Check to see if they have a header already. Is, then dont add another
+      if(!all_the_cards[i].querySelector('.card_text')){
+          all_the_cards[i].appendChild(card_text);
+          card_text.classList.add('order-3');
+      }
+    }
+}, false);
+
+
+//Add item to the headers
+document.addEventListener('click', function (event) {
+  if (!event.target.matches('[data-add-header-item]')) return;
+  for(var i = 0; i < all_the_headers.length; i++){
+    var header_item = document.createElement('div');
+// Check to see if they have a header already. Is, then dont add another
+      all_the_headers[i].appendChild(header_item);
+      header_item.classList.add('header_item');
+    }
+}, false);
+
+
+// Cards width:
+window.addEventListener('input', function(e){
+//Select the slider
+  const slider_card_width = document.querySelector('.slider_card_width');
+// Slider value
+  var val_card_width = slider_card_width.value;
+// Loop through the cards
+
+for(var i = 0; i < all_the_cards.length; i++){
+  all_the_cards[i].style.minWidth = val_card_width + "px";
+};
+
+
+// Apply the slider value as card width
+
+});
+
+
+
+// Clone a card and append it to the main Sections
+
+document.addEventListener('click', function (event) {
+  if (!event.target.matches('[data-clone-card]')) return;
+  var duplicate = document.querySelector('#card-2');
+  if (duplicate) {
+  var clone = duplicate.cloneNode(true);
+  clone.id = "cloned";
+  // I want to append it to the last card
+    all_the_cards[all_the_cards.length - 1].after(clone);
+  }
+
+  console.log("to");
+});
+
+
+
+
+/*
+
+window.addEventListener('scroll', function(e){
+
+  const target_1 = document.querySelector('.ball-1');
+  const target_2 = document.querySelector('.ball-2');
+
+
+  var scrolled = window.pageYOffset;
+  var rate = scrolled * 0.5;
+  var curve = rate/0.8;
+
+
+  target_1.style.transform = 'translate3D(' + curve + 'px,' + rate + 'px,' + rate + 'px'     +')';
+  target_2.style.transform = 'rotate(' + rate * -1 + 'deg' + ')';
+
+});
+
+window.addEventListener('input', function(e){
+  const slider_r = document.querySelector('.slider_r');
+  const btn = document.querySelector('.btn');
+
+  const main = document.querySelector('.main-section');
+
+  var r_val = slider_r.value;
+
+  btn.style.backgroundColor = 'rgba(' + r_val + ',' + r_val + ',0,1)';
+  btn.style.borderRadius = r_val + 'px';
+  btn.style.padding = r_val + 'px';
+
+
+  main.style.background ='linear-gradient(217deg, rgba(255,0,0,.8), rgba(' + r_val + ',0,0) 70.71%)'
+
+*/
+
+</script>
+</html>

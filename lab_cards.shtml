@@ -1,0 +1,116 @@
+<!--#include virtual="includes/htmlstart.shtml" -->
+<!--#include virtual="includes/headstart.shtml" -->
+<!--#include virtual="includes/meta.shtml" -->
+<!--#include virtual="includes/title.shtml" -->
+<link rel="stylesheet" href="styles/css/normalise.css">
+<link rel="stylesheet" href="styles/css/variables.css">
+<link rel="stylesheet" href="styles/css/fonts.css">
+<link rel="stylesheet" href="styles/css/size-16.css">
+<link rel="stylesheet" href="styles/css/forms.css">
+<link rel="stylesheet" href="styles/css/buttons.css">
+<link rel="stylesheet" href="styles/css/lists.css">
+<link rel="stylesheet" href="styles/css/images.css">
+
+<link rel="stylesheet" href="styles/css/backgrounds.css">
+<link rel="stylesheet" href="styles/css/shadows.css">
+<link rel="stylesheet" href="styles/css/paddings-margins.css">
+<link rel="stylesheet" href="styles/css/modifiers.css">
+<link rel="stylesheet" href="styles/css/component_header.css">
+<link rel="stylesheet" href="styles/css/tables.css">
+<link rel="stylesheet" href="styles/css/cards.css">
+
+<link rel="stylesheet" href="styles/css/custom.css">
+
+
+<style>
+  /*-----------*/
+ /* UI styles */
+/*-----------*/
+
+  /*----------*/
+ /* Sections */
+/*----------*/
+.main_section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+  /*-------------*/
+ /* Card styles */
+/*-------------*/
+
+.card_skin {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0.5rem;
+  background-color: hotpink;
+  max-width: 25rem;
+  min-width: 1rem;
+  min-height: 20rem;
+  border-radius: 1rem;
+}
+
+.card_header {
+  height: 3rem;
+  width: 100%;
+  background-color: purple;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  padding: 0 1rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_item {
+  width: 2rem;
+  height: 2rem;
+  background-color: blue;
+}
+
+.card_media {
+  height: 20rem;
+  width: 100%;
+  background-color: green;
+}
+
+.card_text {
+  width: 100%;
+  background-color: rgba(255,255,255,0.5);
+}
+
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
+.order-3 {
+  order: 3;
+}
+
+
+p {
+    width: auto!important;
+}
+</style>
+
+<html>
+
+<section class="main_section">
+
+<div class="card_skin">
+  <div class="card_header">I am a header</div>
+  <div class="card_media">media</div>
+</div>
+
+</section>
+
+</html>
